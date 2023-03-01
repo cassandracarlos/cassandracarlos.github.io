@@ -3,13 +3,34 @@
     body {
         margin: 0;
         width: 100%;
-    }}
-* {margin: 0;box-sizing: border-box;}
-html {scroll-behavior: smooth;}
-body {color: #fff;background: #111;font-family: 'Poppins', sans-serif;margin: 0 auto;font-size: 115%;width: 60vw;}
-a {color: #fff;text-decoration: none;}
-a:hover {color: #865Dff;}
-section {margin: 0;}
-img {max-width: 100%;}
-.button {padding: .5em;border: 1px solid #fff;}
-.block {min-height: 100vh;}
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #fff;
+    background: #111;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    width: 75vw;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+section {
+    margin: .5em 0;
+    padding: 25px;
+    border: 1px solid #fff;
+}
+img {
+    max-width: 100%;
+}
