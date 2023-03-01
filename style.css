@@ -3,8 +3,7 @@
     body {
         margin: 0;
         width: 100%;
-    }
-}
+    }}
 * {margin: 0;box-sizing: border-box;}
 html {scroll-behavior: smooth;}
 body {color: #fff;background: #111;font-family: 'Poppins', sans-serif;margin: 0 auto;font-size: 115%;width: 60vw;}
