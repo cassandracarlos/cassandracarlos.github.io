@@ -6,17 +6,14 @@ _italic text_
 <sub>subscript</sub>
 -->
 
-__projects__
+__project brainstorm__
 
-> a simple blog about one of the following topics:
+a simple blog (my progress) (webdesign focus) (consider adding simple low poly 3D assets)
 
-architecture (tiny homes)
-taking care of houseplants
-website design & development
-journal-like blog about my progress
+social media platform <sub>if myspace was made in 2023</sub> (casual use + modular widgets) (myspace + tumblr + discord + reddit)
 
-> if myspace (or tumblr) was made in the 2020s
+landing page resembling print (either a manga page or a retro magazine?) <sub>or a webpage that doubles as an illustration (inc. graphic + interactive elements?)</sub>
 
-social platform for hanging out with friends
-casual and fun, less emphasis on popularity
-modular widgets allow for page customization
+step-by-step tutorial site for a hobby (eg. origami?) with simple and elegant interface.
+
+...or a daily-update online magazine (ie. Hypebeast, Metacritic, Eurogamer, Kotaku...) <sub>a simple wireframe without content</sub> ()advanced
