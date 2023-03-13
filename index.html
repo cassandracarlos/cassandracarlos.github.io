@@ -7,77 +7,78 @@
 </head>
 <body>
 
-<!--Navbar-->
-<section>
-    <a href="#00">
-        C.</a>
-    <a href="#01">
-        About</a>
-    <a href="#02">
-        Skills</a>
-    <a href="#03">
-        Work</a>
-    <a href="#04">
-        Contact</a>
-</section>
-
-<!--Header-->
-<section id="00">
-<h1>Cassandra Carlos</h1>
-    <a href="#03">View Work</a>
-</section>
-
-<!--About-->
-<section id="01">
-<h2>About</h2>
-    <p>Website developer with a degree in Illustration from Emily Carr University of Art & Design.</p>
-    <a href="#04">Contact</a>
-    <a href="resume.pdf" target="_blank">Resume</a>
-</section>
-
-<!--Skills-->
-<section id="02">
-<h2>Skills</h2>
-    <p>HTML</p>
-    <p>CSS</p>
-    <p>JavaScript</p>
-    <p>React</p>
-</section>
-
-<!--Work-->
-<section id="03">
-<h2>Work</h2>
-    <table>
-    <tr><!--Project 1-->
-        <td style="padding-left: 1em;">
-            <img src="images/project1.png" alt="project 1 image (13x8in)"/><br>
-            <h3>Project 1</h3>
-            <p>Some text some text some text some text some text some text some text some text some text...</p><br>
-            <a href="work/w01.html" target="_blank">Launch Site</a>
-        </td>
-    <!--Project 2-->
-        <td style="padding-left: 1em;">
-            <img src="images/project2.png" alt="project 2 image (13x8in)"/><br>
-            <h3>Project 2</h3>
-            <p>Some text some text some text some text some text some text some text some text some text...</p><br>
-            <a href="work/w01.html" target="_blank">Launch Site</a>
-        </td>
-    </tr>
-    </table>
-</section>
-
-<!--Contact-->
-<section id="04">
-<h2>Contact</h2>
-    <a href="https://github.com/codingcass" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/cassandra-carlos/" target="_blank">LinkedIn</a>
-    <a href="#">Email</a>
-</section>
-
-<!--Footer-->
-<section>
-    <p>© Copyright 2023. All right reserved</p>
-</section>
+    <section class="home" id="home">
+        <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </section>
+    <section class="skills" id="skills">
+        <h1>Skills</h1>
+        <ul>
+            <li><img src="logo/js.png" alt="JavaScript" />JavaScript</li>
+            <li><img src="logo/h5.png" alt="HTML5" />HTML5</li>
+            <li><img src="logo/cs.png" alt="CSS3" />CSS3</li>
+            <li><img src="logo/re.png" alt="React" />React</li>
+        </ul>
+        <span class="about">
+            <p class="me">Hi! My name is Cassandra Carlos.</p>
+            <p class="status"></p>
+            <button type="resume">Resume</button>
+            <p>When I’m not coding,</p>
+            <p>I cook new dishes | go for walks | make 3d illustrations | work on puzzles</p>
+        </span>
+    </section>
+    <section class="projects" id="projects">
+        <div class="info">
+            <h1>Projects</h1>
+            <p>These are some of my recent projects. Some of them are in development, while some are already completed. Feel free to check all of my projects on my Github.</p>
+        </div>
+        <div class="grid">
+            <div class="cell">
+                <img src="images/mod.png" alt="Image 1">
+                <span id="info">
+                    <h2>Modular Study Tool</h2>
+                    <p class="tag">Browser Extension</p>
+                    <p class="stack">HTML, CSS, JavaScript, React, PHP, JQuery</p>
+                    <p>An application made for personal use. I created this to track my progress when learning how to code. This is currently tailored towards my workflow.</p>
+                </span>
+                <span id="button">
+                    <button type="demo">Live Demo</button>
+                    <button type="code">View Code</button>
+                </span>
+            </div>
+            <div class="cell">
+                <img src="images/blog.png" alt="Image 3">
+                <span id="info">
+                    <h2>Level Design Lab</h2>
+                    <p class="tag">Website Design</p>
+                    <p class="stack">HTML, CSS, JavaScript, React, Blender</p>
+                    <p class="blurb">A working blog site about tiny homes and urban design.</p>
+                </span>
+                <span id="button">
+                    <button type="demo">Live Demo</button>
+                    <button type="code">View Code</button>
+                </span>
+            </div>
+        </div>          
+    </section>
+    <section class="contact" id="contact">
+        <div class="info">
+            <h1>Contact</h1>
+            <p>Feel free to drop me a message or send me an email.</p>
+            GitHub | LinkedIn
+            codingcass@gmail.com
+        </div>
+    </section>
+    <section class="foot">
+        <ul>
+            <li><a><img src="logo/h5.png" alt="GitHub" /></a></li>
+            <li><a><img src="logo/cs.png" alt="LinkedIn" /></a></li>
+        </ul>
+        <a href="#home">Back to Top</a>
+    </section>
 
 </body>
 </html>

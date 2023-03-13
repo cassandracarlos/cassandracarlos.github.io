@@ -1,36 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@media only screen and (max-width: 1000px) {
-    body {
-        margin: 0;
-        width: 100%;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+* {
+margin: 0;
+box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
-}
-* {
-    margin: 0;
-    box-sizing: border-box;
+scroll-behavior: smooth;
 }
 body {
-    color: #fff;
-    background: #111;
-    font-family: 'Poppins', sans-serif;
-    margin: 0 auto;
-    width: 75vw;
+font-family: 'Lato', sans-serif;
+background: #ddd;
 }
 a {
-    color: #fff;
-    text-decoration: none;
+color: #111;
+text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
+
+.skills, .projects, .contact {
+    width: 80vw;
+    margin: 0 auto;
 }
-section {
-    margin: .5em 0;
-    padding: 25px;
-    border: 1px solid #fff;
+
+/* <section class="home"> */
+.home {
+height: 100vh;
+background: #111;
 }
-img {
-    max-width: 100%;
+.home a {
+display: block;
+color: #eee;
+margin: 0;
+text-decoration: none;
+}
+
+/* <section class="skills"> */
+.skills {
+background: #fff;
+}
+.skills img {
+height: auto;
+width: 48px;
+}
+.home ul, .skills ul {
+margin: 0;
+padding: 0;
+display: flex;
+list-style: none;
+justify-content: center;
+flex-wrap: wrap;
+}
+.home li, .skills li {
+padding: 0 10px;
+}
+
+/* <section class="projects" *> */
+.projects {
+background: #ccc;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 10px;
+}
+.cell {
+display: flex;
+flex-direction: column;
+/*padding-bottom: 100%;*/
+border: 1px solid rgb(220, 220, 220);
+}
+.cell img {
+width: 100%;
+height: auto;
+border: 1px solid black;
+}
+@media (max-width: 900px) {
+    .projects {
+        min-height: 320vh;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* <section class="contact" *> */
+.contact {
+background: #007da2;
+}
+
+/* <section class="footer" *> */
+.foot {
+background: #111;
+}
+.foot ul {
+margin: 0;
+padding: 0;
+display: flex;
+list-style: none;
+justify-content: center;
+flex-wrap: wrap;
+}
+.foot li {
+padding: 0 10px;
+}
+.foot a {
+color: #eee;
+margin: 0;
+padding: 0;
+display: flex;
+list-style: none;
+justify-content: center;
+flex-wrap: wrap;
 }
