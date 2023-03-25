@@ -1,73 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-*{
-margin:0;
-box-sizing:border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
-html{
-scroll-behavior:smooth;
+body {
+    font-family: 'Poppins', sans-serif;
 }
-body{
-font-family:'Lato', sans-serif;
+/*
+a {
+    color:#222;
+    text-decoration:none;
 }
-a{
-color:#111;
-text-decoration:none;
+img {
+    display: block;
 }
-.skills{
-background:#fff;
+ul {
+    margin: 0;
+    padding: 0;
 }
-.skills img{
-height:auto;
-width:48px;
+li {
+    display: flex;
+    align-items: center;
+    list-style: none;
 }
-.home ul,.skills ul{
-margin:0;
-padding:0;
-display:flex;
-list-style:none;
-flex-wrap:wrap;
+.text-name {
+    font-size: 1.5rem;
+    font-weight: 600;
 }
-.home li,.skills li{
-padding:0 10px;
+.text-head {
+    font-size: 1.25rem;
+    font-weight: 600;
 }
-.grid{
-display:grid;
-grid-template-columns:repeat(2, 1fr);
-grid-gap:10px;
+*/
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #001660;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.cell{
-display:flex;
-flex-direction:column;
-border:1px solid rgb(220,220,220);
+form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
 }
-.cell img{
-width:100%;
-height:auto;
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
 }
-@media(max-width: 900px){
-.projects{min-height:320vh;}
-.grid{grid-template-columns: 1fr;}
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
 }
-.footer{
-background:rgb(25,25,25);
-}
-.footer ul{
-margin:0;
-padding:0;
-display:flex;
-list-style:none;
-justify-content:center;
-flex-wrap:wrap;
-}
-.footer li{
-padding:0 10px;
-}
-.footer a{
-color:#eee;
-margin:0;
-padding:0;
-display:flex;
-list-style:none;
-justify-content:center;
-flex-wrap:wrap;
+form button{
+    padding: 15px;
+    background: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
 }
