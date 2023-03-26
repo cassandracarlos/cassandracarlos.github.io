@@ -1,31 +1,72 @@
-.work {
+/*
+.work h2 {
+    font-size: 1.75rem;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.work .head h2 {
+    padding: 25px;
+    width: 75%;
+    border: 1px solid lightgrey;
+}
+
+@media screen and (max-width: 900px) {
+    .work .head h2 {
+        width: 100%;
+    }
+}
+*/
+.work .content {
     display: flex;
     width: 75%;
-    height: 80vh;
     margin: 0 auto;
+    border: 1px solid lightgrey;
     align-items: center;
     justify-content: center;
 }
 
+.work .content h2 {
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+.work p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.work h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+}
+
 .full {
+    padding: 25px;
     flex-wrap: wrap;
     display: flex;
+    /*border: 1px solid lightgrey;*/
     align-items: center;
     justify-content: center;
 }
 
 .half {
     width: 50%;
-    padding: 0 15px;
-    border: 1px solid lightgrey;
+    padding: 0;
     box-sizing: border-box;
 }
 
 .half img {
     width: 100%;
+    padding-right: 25px;
 }
 
 @media screen and (max-width: 900px) {
+    .full {
+        padding: 15px;
+    }
     .half {
         width: 100%;
         padding: 15px;

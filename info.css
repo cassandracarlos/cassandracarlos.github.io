@@ -1,7 +1,7 @@
 .info {
-    height: 40vh;
     display: flex;
     margin: 0 auto;
+    max-width: 800px;
     align-items: center;
     justify-content: center;
 }
@@ -14,16 +14,22 @@
     font-size: 1.3rem;
 }
 
+.info li {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #555;
+}
+
 .info .content {
     padding: 25px;
-    width: 75%;
+    /*width: 75%;*/
     border: 1px solid lightgrey;
 }
 
 .info img {
-    height: 40px;
-    width: 40px;
-    margin: 5px 0;
+    height: 36px;
+    width: 36px;
+    margin: 15px 5px 15px 0;
 }
 
 .info ul {
