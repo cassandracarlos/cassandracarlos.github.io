@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@200;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #222;
+    font-family: 'Lato', sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+    .hero, .info, .work, .form {
+        min-width: 100%;
+    }
+    .content {
+        min-width: 100%;
+    }
+}
+
+button {
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.05s ease;
+}
+
+button:hover {
+    background: #f3f3f3;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}

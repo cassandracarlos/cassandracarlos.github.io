@@ -1,104 +1,76 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Cassandra Carlos | CodingCass</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-
-    <img class="logo" src="images/logo.png">
-
-    <div class="container">
-        <div class="element1">Element 1</div>
-        <div class="element2">Element 2</div>
-    </div>
-    <!--
-    <div class="hero">
-        <div class="hero1">
-            <p>Cassandra Carlos</p>
-            <p>Front End Web Developer</p>
-            <a href="#work">View Work</a>
+    <head>
+        <title>Cassandra Carlos | CodingCass</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="hero.css">
+        <link rel="stylesheet" href="info.css">
+        <link rel="stylesheet" href="work.css">
+        <link rel="stylesheet" href="form.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="hero">
+            <div class="content">
+                <h1>Cassandra Carlos</h1>
+                <h2>Full Stack Developer & Digital Artist</h2>
+                <button>View Work</button>
+            </div>
         </div>
-        <div class="hero2">
-            <img src="images/p01.png" alt="Project Image">
-        </div>
-    </div>-->
-
-    <div class="info">
-        
-        <div class="about">
-
-            <h2>About Me</h2>
-            <p>
-                    In this example, the two blocks of text are contained within a div element with class text-container. The display: flex property in CSS is used to display the two columns side by side, with justify-content: space-between to add some space between them. Each column has a width of 48% to allow for some spacing between them. The heading and paragraph elements are styled using CSS to have consistent font sizes and line heights.
-            </p>
-            
-        </div>
-
-        <div class="socials">
-
-            <a href="" target="_blank"><img src="images/logo.png" alt="Link to my GitHub profile."></a>
-
-            <a href="" target="_blank"><img src="images/li.png" alt="Link to my LinkedIn profile."></a>
-
-        </div>
-
-        <a href="#contact">Contact</a>
-
-        <div class="skills">
-
-            <h2>Skills</h2>
-            
-            <ul>
+        <div class="info">
+            <div class="content">
+                <!--About Me-->
+                <div class="about">
+                    <h2>About Me</h2>
+                    <p>In this example, the two blocks of text are contained within a div element with class text-container.</p>
+                </div>
+                <!--Social Links-->
+                <a href="" target="_blank">
+                    <img src="images/logo.png" alt="Link to my GitHub profile.">
+                </a>
+                <a href="" target="_blank">
+                    <img src="images/li.png" alt="Link to my LinkedIn profile.">
+                </a>
+                <!--Skills-->
+                <h2>Skills</h2>
+                <ul>
+                    <li>JavaScript</li>
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React Basics</li>
+                    <li>React</li>
+                    <li>JQuery</li>
+                    <li>PHP</li>
                     <li>GitHub</li>
-                    <li>SEO</li>
-                    <li>Responsive Design</li>
-            </ul>
-
+                    <li>MySQL</li>
+                    <li>Photoshop</li>
+                    <li>Blender</li>
+                </ul>
+            </div>
         </div>
-
-    </div>
-
-    <div class="container">
-        <div class="element1">Element 1</div>
-        <div class="element2">Element 2</div>
-    </div>
-    <!--
-    <div class="work">
-        <div class="element1">
-            <img src="images/p01.png" alt="Project Image">
+        <div class="work">
+            <div class="full">
+                <div class="half">
+                    <img src="images/p01.png">
+                </div>
+                <div class="half">
+                    <p>Study Tool</p><p>HTML, CSS, JavaScript, React</p>
+                    <p>Each column has a width of 48% to allow for some spacing between them.</p>
+                    <button>Live Demo</button>
+                    <button>View Code</button>
+                </div>
+            </div>
         </div>
-        <div class="element2">
-                <h3>Study Tool</h3>
-                <h5>HTML, CSS, JavaScript, React, MySQL, PHP</h5>
-                <p>Code library & project management tool.</p>
-                <a href="#">Live Demo</a>
-                <a href="#">View Code</a>
+        <div class="form">
+            <form action="https://formsubmit.co/04edcd97645e5847eb8cda3b42daec16" method="POST">
+                <p>Get in touch!</p>
+                <input for="name" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <textarea rows="4" name="message" placeholder="Enter Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
         </div>
-    </div>-->
-    
-    <div class="contact">
-
-        <form action="https://formsubmit.co/04edcd97645e5847eb8cda3b42daec16" method="POST">
-
-            <h2>Get in touch!</h2>
-
-            <input for="name" name="name" placeholder="Enter Your Name" required>
-            <input type="email" name="email" placeholder="Enter Your Email" required>
-
-            <textarea rows="4" name="message" placeholder="Enter Your Message"></textarea>
-            <button type="submit">Send</button>
-
-        </form>
-
-    </div>
-
-    <p class="copyright">&copy; Cassandra Carlos 2023</p>
-
-</body>
+        <div class="copy">
+            <p>&copy; Cassandra Carlos 2023</p>
+        </div>
+    </body>
 </html>

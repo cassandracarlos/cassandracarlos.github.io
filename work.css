@@ -1,0 +1,33 @@
+.work {
+    display: flex;
+    width: 75%;
+    height: 80vh;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.full {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.half {
+    width: 50%;
+    padding: 0 15px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+}
+
+.half img {
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .half {
+        width: 100%;
+        padding: 15px;
+    }
+}

@@ -1,0 +1,14 @@
+.hero {
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightgrey;
+}
+.hero .content {
+    left: 0;
+    padding: 25px;
+    width: 75%;
+    border: 1px solid black;
+}
