@@ -1,22 +1,3 @@
-/*
-.work h2 {
-    font-size: 1.75rem;
-    width: 75%;
-    margin: 0 auto;
-}
-
-.work .head h2 {
-    padding: 25px;
-    width: 75%;
-    border: 1px solid lightgrey;
-}
-
-@media screen and (max-width: 900px) {
-    .work .head h2 {
-        width: 100%;
-    }
-}
-*/
 .work .content {
     display: flex;
     width: 75%;
@@ -47,7 +28,6 @@
     padding: 25px;
     flex-wrap: wrap;
     display: flex;
-    /*border: 1px solid lightgrey;*/
     align-items: center;
     justify-content: center;
 }
@@ -65,10 +45,13 @@
 
 @media screen and (max-width: 900px) {
     .full {
-        padding: 15px;
+        padding: 0;
     }
     .half {
         width: 100%;
         padding: 15px;
+    }
+    .half img {
+        padding: 0;
     }
 }

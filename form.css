@@ -35,13 +35,4 @@ form input, form textarea {
 .copy {
     text-align: center;
     margin: 20px auto;
-    /*border: 1px solid lightgrey;*/
 }
-
-/*.contact {
-height: 100vh;
-background: #67e9c4;
-display: flex;
-align-items: center;
-justify-content: center;
-}*/
