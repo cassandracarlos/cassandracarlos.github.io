@@ -1,63 +1,129 @@
 <!DOCTYPE html> 
 <html>
 <head>
-    <title>Cassandra Carlos</title>
+    <title>Cassandra Carlos | CodingCass</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
+    <section id="s01">
+
+        <div class="header">
+
+            <img src="images/logo.png" alt="CodingCass logo.">
+
+        </div>
       
-    <section class="hero" id="s01">
+        <div class="hero">
+            
+            <div class="hero-main">
+                <div class="hero-text">
+                    <h1>Hi, I'm Cassandra Carlos</h1>
+                    <h2>I'm a front end web developer with a background in art & design.</h2>
+                    <span id="button">
+                        <a href="#work">View Work</a>
+                    </span>
+                </div>
 
-        <h1>Cassandra Carlos</h1>
-        <h2>Junior Full Stack Developer</h2>
-
-        <div class="logos">
-            <img src="images/h5.png" height="50px" width="50px" alt="HTML">
-            <img src="images/cs.png" height="50px" width="50px" alt="CSS">
-            <img src="images/js.png" height="50px" width="50px" alt="JavaScript">
-            <img src="images/re.png" height="50px" width="50px" alt="React">
-            <img src="images/sql.png" height="38px" width="auto" alt="MySQL">
-            <img src="images/php.png" height="34px" width="auto" alt="PHP">
+                <div class="hero-img">
+                    <img src="images/logo.png" alt="CodingCass logo.">
+                </div>
+            </div>
+            
         </div>
 
-    </section>
+        <div class="info">
 
-    <section class="portfolio" id="s02">
+            <div class="info-main">
 
-        <div class="project">
-            <img src="images/p01.png" alt="Project Image">
-            <h3>Level Design Lab</h3>
-            <p>3D asset library & project management software.</p>
-            <a href="#" class="btn">View Code</a>
-        </div>
+            <div class="about">
 
-        <div class="project">
-            <img src="images/p01.png" alt="Project 2 Image">
-            <h3>Website Wireframes</h3>
-            <p>Responsive templates made in HTML & CSS.</p>
-            <a href="#" class="btn">View Code</a>
-        </div>
+                <h2>About Me</h2>
+                
+                <p>
+                    In this example, the two blocks of text are contained within a div element with class text-container. The display: flex property in CSS is used to display the two columns side by side, with justify-content: space-between to add some space between them. Each column has a width of 48% to allow for some spacing between them. The heading and paragraph elements are styled using CSS to have consistent font sizes and line heights.
+                </p>
+            
+            </div>
 
-    </section>
+            <div class="info-socials">
+                <img src="images/logo.png" alt="Link to my GitHub profile.">
+                <img src="images/logo.png" alt="Link to my LinkedIn profile.">
+            </div>
 
-    <section class="container" id="s03">
+            <a href="#contact">Contact</a>
 
-        <form action="https://formsubmit.co/04edcd97645e5847eb8cda3b42daec16" method="POST">
 
-            <h3>Get in touch!</h3>
-
-            <input for="yourName" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email"required>
-
-            <textarea rows="4" name="message" placeholder="Your Message"></textarea>
-
-            <button type="submit">Send</button><br><p style="text-align: center;">
-            <a><img src="images/gh.png" alt="Link to my GitHub profile." /></a>
-            <a><img src="images/li.png" alt="Link to my LinkedIn profile." /></a></p>
-
-        </form>
+                <h2>My Skills</h2>
         
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React Basics</li>
+                    <li>GitHub</li>
+                    <li>SEO</li>
+                    <li>Responsive Design</li>
+                </ul>
+
+            </div>
+                
+        </div>
+
+    </section>
+
+    <section id="s02">
+
+        <div class="work">
+
+            <h2>Work</h2>
+
+            <div class="work-main">
+
+            <div class="work-img">
+                <img src="images/p01.png" alt="Project Image">
+            </div>
+    
+            <div class="work-txt">
+                <h3>Study Tool</h3>
+                <h5>HTML, CSS, JavaScript, React, MySQL, PHP</h5>
+                <p>Code library & project management tool.</p>
+                <a href="#">Live Demo</a>
+                <a href="#">View Code</a>
+            </div>
+
+            </div>
+    
+        </div>
+
+    </section>
+
+    <section id="s03">
+
+        <div class="contact">
+
+            <form action="https://formsubmit.co/04edcd97645e5847eb8cda3b42daec16" method="POST">
+
+                <h2>Get in touch!</h2>
+
+                <input for="name" name="name" placeholder="Enter Your Name" required>
+
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+
+                <textarea rows="4" name="message" placeholder="Enter Your Message">
+                </textarea>
+
+                <button type="submit">Send</button>
+
+            </form>
+
+        </div><!--STATUS: Completed-->
+
+        <div class="footer">
+            <p>&copy; Cassandra Carlos 2023</p>
+        </div><!--STATUS: Completed-->
+
     </section>
 
 </body>
