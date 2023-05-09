@@ -10,54 +10,51 @@ body {
 	margin: 0;
 	padding: 0;
 }
-header, footer {
+.main {
+    min-height: 100vh;
+}
+.header {
 	background-color: rgb(40, 40, 40);
 	color: rgb(250, 250, 255);
-    padding: 20px;
+    padding: 25px;
 }
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.center {
+    max-width: 800px;
+    margin: 0 auto;
 }
-nav li {
-    display: inline-block;
-    margin-right: 20px;
+.title {
+    font-size: 2.5rem;
 }
-nav a {
-    color: #fff;
-    text-decoration: none;
+.tagline {
+    font-size: 1.05rem;
 }
-nav a:hover {
-    color: #ccc;
+.projects {
+    max-width: 600px;
+    margin: 25px auto;
 }
-main {
-    padding: 20px;
+.contact {
+    max-width: 600px;
+    margin: 25px auto;
 }
-section {
-    margin-bottom: 40px;
+.projects h2, .contact h2 {
+    margin-bottom: 10px;
 }
-section h2 {
-    margin-top: 0;
+.footer { 
+	background-color: rgb(40, 40, 40);
+	color: rgb(250, 250, 255);
+    padding: 25px;
+    text-align: center;
+}
+a {
+    color: rgb(30, 30, 30);
+}
+a:hover {
+    color: rgb(101, 101, 245);
 }
 ul {
-    margin: 0;
+    margin-bottom: 15px;
     padding: 0;
     list-style: none;
-}
-ul li {
-    margin-bottom: 20px;
-}
-ul li p {
-    margin-top: 5px;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-form label {
-    display: block;
-    margin-bottom: 5px;
 }
 form input, form textarea {
     display: block;
@@ -76,10 +73,5 @@ form input[type="submit"] {
     cursor: pointer;
 }
 form input[type="submit"]:hover {
-    background-color: #ccc;
-    color: #333;
-}
-#contact {
-    width: 60%;
-    margin: 0 auto;
+    background-color: rgb(101, 101, 245);
 }
