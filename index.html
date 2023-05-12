@@ -2,54 +2,70 @@
 <html>
 <head>
 	<script>
-	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-KTK6NFQ');
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KTK6NFQ');
 	</script>
+	<meta charset="utf-8">
     <title>CodingCass</title>
-    <link rel="stylesheet" href="style.css">	<meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="layout.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 <noscript>
 	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTK6NFQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
-    
+
 	<header class="header">
-		<div class="center">
-			<h1 class="title">CodingCass</h1>
-			<h2 class="tagline">Hi, I'm Cass 👾 I'm a web developer, digital artist and blogger.</h2>
-		</div>
+			
+		<h1 id="name">
+				<a href="#home">CodingCass</a>
+		</h1>
+					
+		<p id="bio">
+				Hi, I'm Cass 👾 I'm a web developer, digital artist and blogger.
+		</p>
+
+		<ul id="social">
+				<li><a href="" target="_blank"><img src="pinterest.png" alt="Link to my Pinterest profile"></a></li>
+				<li><a href="" target="_blank"><img src="github.png" alt="Link to my GitHub profile"></a></li>
+				<li><a href="" target="_blank"><img src="email.png" alt="Link to my contact form"></a>
+				</li>
+		</ul>
+		
+	</section>
+		
 	</header>
 
 	<main class="main">
 
 		<section class="projects">
 			<h2>Projects</h2>
-				<ul>
-					<li><p><a href="http://www.ourcodingcorner.com/" target="_blank">ourcodingcorner.com</a> &mdash; A blog about learning how to code</p></li>
-					<li><p><a href="" target="_blank">urban and interiors</a>	&mdash; Collection of 3D artworks</p></li>
-				</ul>
+			<ul>
+				<li>
+					<a href="http://www.ourcodingcorner.com/" target="_blank">ourcodingcorner.com</a> &mdash; A blog about learning how to code
+				</li>
+				<li>
+					<a href="" target="_blank">urban and interiors</a>	&mdash; Collection of 3D artworks
+				</li>
+			</ul>
 		</section>
-		
+			
 		<section class="contact">
 			<h2>Contact</h2>
-				<form 
-				action="https://formsubmit.co/codingcass@gmail.com" method="post">
-					<input type="name" name="name" placeholder="Your Name" required>
-					<input type="email" name="email" placeholder="Your Email" required>
-					<textarea id="message" name="message" placeholder="Your Message" required></textarea>
-					<input type="submit" value="Send">
-				</form>
+			<form action="https://formsubmit.co/codingcass@gmail.com" method="post">
+				<input type="name" name="name" placeholder="Your Name" required>
+				<input type="email" name="email" placeholder="Your Email" required>
+				<textarea id="message" name="message" placeholder="Your Message" required></textarea>
+				<input type="submit" value="Send">
+			</form>
 		</section>
 
 	</main>
-	
-	<footer class="footer">
-		<p>&copy; Cassandra Carlos 2023</p>
-	</footer>
 
 </body>
 </html>
