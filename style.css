@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+.icon img {
+  max-width: 50px;
+  height: auto;
+}
+
+main img {
+  max-height: 300px;
+  width: auto;
+  display: block;
+  
+}
+
 *
 {
   margin: 0;
