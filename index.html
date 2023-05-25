@@ -1,31 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<style>
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .column {
-      width: 33.33%;
-    }
-    .column img {
-      width: 100%;
-      height: auto;
-    }
-    @media (max-width: 768px) {
-      .column {
-		width: 50%;
-      }
-    }
-	@media (max-width: 640px) {
-      .column {
-		width: 100%;
-      }
-    }
-  </style>
 	<script>
 		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -38,63 +13,34 @@
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
-
 	<noscript>
 		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTK6NFQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	</noscript>
-
-	<nav>
-
-		<ul>
-			<li><a href="#home">Cassandra Carlos</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-
-		<header>
-
-			<h1>Welcome to my Portfolio</h1>
-			<p>I'm a web developer, digital artist and blogger.</p>
-	
-		</header>
-	
-	<!--
-	<div class="icon">
-		<a href=""><img src="icons/email.png"></a>
-		<a href=""><img src="icons/github.png"></a>
-		<a href=""><img src="icons/pinterest.png"></a>
+	<header>
+	<div class="name">
+		<h1>Welcome to my Portfolio</h1>
+		<p>I'm a web developer and digital artist.</p>
 	</div>
-	-->
-	
-	</nav>
+	<div class="icon">
+		<a href="">Email</a>
+		<a href="">GitHub</a>
+		<a href="">LinkedIn</a>
+	</div>
+	</header>
 
 	<main>
-		<section class="work">
-  <div class="container">
-    <div class="column">
+	<section class="work">
       <img src="images/img_1.png" alt="Image 1">
-    </div>
-    <div class="column">
-      <img src="images/img_2.png" alt="Image 2">
-    </div>
-    <div class="column">
-      <img src="images/img_3.png" alt="Image 3">
-    </div>
-    <div class="column">
+	  <img src="images/img_2.png" alt="Image 2">
       <img src="images/img_4.png" alt="Image 4">
-    </div>
-    <div class="column">
       <img src="images/img_5.png" alt="Image 5">
-    </div>
-    <div class="column">
+	  <img src="images/img_3.png" alt="Image 3">
       <img src="images/img_6.png" alt="Image 6">
-    </div>
+	</section>
 	</main>
 
 	<footer>
-
 		<h2>Contact</h2>
 		<form action="https://formsubmit.co/codingcass@gmail.com" method="post">
 			<input type="name" name="name" placeholder="Your Name" required>
@@ -102,7 +48,6 @@
 			<textarea id="message" name="message" placeholder="Your Message" required></textarea>
 			<input type="submit" value="Send">
 		</form>
-		
 	</footer>
 
 </body>
