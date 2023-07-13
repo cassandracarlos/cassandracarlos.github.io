@@ -2,41 +2,6 @@
 
 This is the CSS stylesheet for my portfolio website cassandracarlos.com
 
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-.logo {
-  font-size: 150%;
-  font-weight: 600;
-}
-
-.hello {
-  font-size: 200%;
-}
-
-.name {
-  font-size: 200%;
-  font-weight: 600;
-}
-
-.aka {
-  font-size: 115%
-  font-style: italic;
-}
-
-.blurb {
-  font-size: 150%;
-}
-
-/*
-
 Table of Contents
 
 1. General
@@ -50,12 +15,36 @@ Table of Contents
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* General */
+.logo {
+  font-size: 150%;
+  font-weight: 600;
+}
+
+.main {
+  width: 65%;
+  margin: 0 auto;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0 auto;
+}
+
+.hello {
+  font-size: 200%;
+  line-height: 0;
+}
+
+.name {
+  font-size: 200%;
+  font-weight: 600;
+  line-height: 0;
+}
+
+.aka {
+  font-style: italic;
 }
 
 /* Navigation */
@@ -65,7 +54,7 @@ nav {
   width: 100%;
   position: sticky;
   background: #FFFFFF;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(200, 200, 200);
 }
 
 nav ul {
@@ -83,30 +72,20 @@ nav ul .push {
 
 nav ul li {
   display: inline-block;
+  padding: 10px 20px;
 }
 
 nav ul li a {
   display: inline-block;
   position: relative;
-  padding: 10px 20px;
   text-decoration: none;
-  color: #333;
+  color: rgb(100,100,100);
   transition: all 0.3s ease;
 }
 
-nav ul li a::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #333;
-  transition: width 0.3s ease;
-}
-
-nav ul li a:hover::before {
-  width: 100%;
+nav ul li a:hover {
+  transition: 0.05s;
+  color: rgb(0, 0, 0);
 }
   
 /* Hero */
@@ -131,7 +110,6 @@ nav ul li a:hover::before {
 
 .left-content {
   flex-basis: 50%;
-  line-height: 60%;
   text-align: right;
 }
 
@@ -161,15 +139,18 @@ nav ul li a:hover::before {
     margin-bottom: 20px;
   }
 }
-
 .cta-button {
+  background-color: #4CAF50; /* Set the default background color */
+  border: none;
+  color: white;
   padding: 10px 20px;
-  background-color: transparent;
-  font-size: 105%;
-  font-weight: 500;
-  border: 2.5px solid #E1E1E1;
-  cursor: pointer;
-  transition: color 0.3s ease, border-bottom-color 0.3s ease;
-  position: relative;
-  z-index: 1;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.075s; /* Add transition effect */
+}
+
+.cta-button:hover {
+  background-color: #008CBA; /* Change the background color on hover */
 }
