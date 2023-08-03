@@ -3,144 +3,153 @@
 
 	<head>
 
-		<title>
-			Cassandra Carlos // Portfolio
-		</title>
-
 		<meta charset="UTF-8" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1, user=scalable=no"/>
+		<title>
+			
+			Cassandra Carlos
+
+		</title>
 
 		<link rel="stylesheet" href="style.css" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user=scalable=no"/>
 
 	</head>
 
 	<body>
+		
 
-        <!-- NAVIGATION -->
-		<section class="header">
 
-			<h1>
-				<a href="#section-home">CC.</a>
-			</h1>
+        <!-- HEADER -->
+
+
+
+		<header>
+
+			<h2>
+
+				<a href="#section-home">
+					
+					Cassandra Carlos
+				
+				</a>
+
+			</h2>
 
 			<nav>
+
 				<ul>
 
 					<li>
-						<a href="#section-about">
+
+						<a href="#project">
+							
+							Projects
+						
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="#about">
+							
 							About
+						
 						</a>
+
 					</li>
 
 					<li>
-						<a href="#section-portfolio">
-							Portfolio
-						</a>
-					</li>
 
-					<li>
-						<a href="#section-services">
+						<a href="#services">
+							
 							Services
+						
 						</a>
+
 					</li>
 
 					<li>
-						<a href="#section-contact">
+
+						<a href="#contact">
+							
 							Contact
+						
 						</a>
+
 					</li>
 
 				</ul>
+
 			</nav>
 			
-		</section>
+		</header>
 
-		<!-- ABOUT SECTION -->
 
-		<span id="section-about"></span>
 
-		<section class="about" >
+		<!-- ABOUT -->
+
+
+
+		<section id="about">
 
 			<h3>
-				
+
 				About
-			
+
 			</h3>
-			
+
 			<p>
 
-				Hello! I'm Cassandra. I'm a website developer and designer. I am currently available for work. You can email me at codingcass@outlook.com or send me a message through my <a href="#section-contact"><u>Contact Form</u></a>.
-			
+				Hello, I'm Cassandra! I make websites.
+
 			</p>
-
-			<br>
-
-			<h4> Social Links </h4>
-
-			<ul>
-				<li>			<a href="https://www.facebook.com/codingcass" target="_blank">
-					Facebook
-				</a></li>
-				<li>
-					<a href="https://www.linkedin.com/in/cassandra-carlos/" target="_blank">
-						LinkedIn
-					</a></li>
-
-				<li>
-					<a href="https://www.github.com/codingcass" target="_blank">
-						GitHub
-					</a></li>
-
-			</ul>
-
-
 
 		</section>
 
-		<!-- PORTFOLIO SECTION -->
 
-		<section class="portfolio" id="section-portfolio">
+
+		<!-- PROJECTS -->
+
+
+
+		<section id="projects">
 
 			<h3>
 
-				Portfolio
+				Projects
 
 			</h3>
 
-			<div class="projects">
-
-				<div class="project">
-
-					<img src="images/Image1.png" alt="Girl in a jacket">
-
-					<h4>This Website</h4>
-
-					<p>HTML, CSS, JavaScript and Figma</p>
-
-					<p>Coming soon!</p>
-	
-				</div>
-	
-				<div class="project">
-	
-					<img src="images/Image2.png" alt="Girl in a jacket">
-
-					<h4>Coding Corner</h4>
-
-					<p>WordPress</p>
-
-					<p>Coming soon!</p>
-	
-				</div>
-
+			<div class="column">
+				
+				Column 1
+				
 			</div>
 
+			<div class="column">
+					
+				Column 2
+				
+			</div>
+
+			<div class="column">
+					
+				Column 3
+				
+			</div>
+			
 		</section>
+				
 
-		<!-- SERVICES SECTION -->
 
-		<section id="section-services" class="portfolio">
+		<!-- SERVICES -->
+
+
+
+		<section id="services">
 
 			<h3>
 
@@ -148,53 +157,21 @@
 
 			</h3>
 
-			<div class="services">
+			<p>
 
-				<div class="service">
+				These are the services I provide.
 
-					<h4>
-						Web Design
-					</h4>
-
-					<p>
-						I can design a professional website for you and your business.
-					</p>
-
-				</div>
-
-				<div class="service">
-
-					<h4>
-						Web Development
-					</h4>
-
-					<p>
-						I can create your website from the ground-up using code or a content management system such as WordPress.
-					</p>
-
-				</div>
-
-				<div class="service">
-
-					<h4>
-						Domain & Hosting
-					</h4>
-
-					<p>
-						I can help you launch your website to the public by setting up a hosting service and a custom domain name.
-					</p>
-
-				</div>
-
-			</div>
-
-
+			</p>
 
 		</section>
 
-		<!-- CONTACT SECTION -->
 
-		<section class="contact" id="section-contact">
+
+		<!-- CONTACT -->
+
+
+
+		<section id="contact">
 
 			<h3>
 
@@ -202,23 +179,44 @@
 
 			</h3>
 
+			<p>
+
+				Use this form to contact me or email me directly at codingcass@outlook.com
+
+			</p>
+
 			<form action="https://formsubmit.co/codingcass@outlook.com" method="POST">
+				
+				<h4>
+					
+					Name
+				
+				</h4>
+				
+					<input type="text" name="name" required>
+				
+				<h4>
+					
+					Email
+				
+				</h4>
+				
+					<input type="email" name="email" required>
 
-				<h4>Name</h4>
-				<input type="text" name="name" placeholder="your name..." required>
+				<h4>
+					
+					Message
+				
+				</h4>
 
-				<h4>Email</h4>
-				<input type="email" name="email" placeholder="your email address..." required>
+					<textarea id="message" name="message" required></textarea>
 
-				<h4>Message</h4>
-				<textarea id="message" name="message" placeholder="your message..." required></textarea>
+				<button type="submit">
+					
+					Send
+				
+				</button>
 
-				<button type="submit">Send</button>
-
-				<small>
-					You can use this form to contact me, or you can email me directly at codingcass@outlook.com
-				</small>
-						
 			</form>
 
 		</section>
