@@ -1,0 +1,13 @@
+.hero {
+    padding: 240px 0;
+    text-align: center;
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 240px 20px;
+    }
+
+}

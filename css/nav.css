@@ -1,7 +1,18 @@
-nav .content {
+nav content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 75%;
+}
+
+@media (max-width: 768px) {
+
+  nav content {
+      width: 100%;
+  }
+
+}
+
+nav {
+  min-height: 60px;
 }
 
 .logo {
@@ -23,7 +34,7 @@ nav .content {
 
 .links {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 @media (max-width: 768px) {
