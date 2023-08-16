@@ -1,309 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 
+	<!-- HEAD ELEMENTS -->
 	<head>
 
+		<!-- META TAGS -->
 		<meta charset="UTF-8" />
+		<meta name="author" content="Cassandra Carlos" />
+		<meta name="description" content="CodingCass' front-end development portfolio" />
+		<meta name="keywords" content="HTML,CSS,JavaScript,Web Design,App,React" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>
-			Cassandra Carlos
-		</title>
+		<!-- TITLE -->
+		<title>Cassandra's Portfolio</title>
 
-		<link rel="stylesheet" href="styles.css" />
+		<!-- FAVICON -->
+		<link rel="icon" type="image/x-icon" href="icons/lit-object.png">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1, user=scalable=no"/>
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="main.css" />
+
+		<!-- SECTION CSS -->
+		<link rel="stylesheet" href="css/about.css" />
+		<link rel="stylesheet" href="css/contact.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/hero.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" href="css/projects.css" />
 
 	</head>
 
 	<body>
 
-        <!-- HEADER -->
+        <!-- NAVIGATION -->
+		<nav id="navigation">
+			<content>
 
-		<header>
+				<h2 class="logo">
+					<a href="#home">Cassandra Carlos</a>
+				</h2>
 
-			<h2>
-				<a href="#section-home">
-					Cassandra Carlos
-				</a>
-			</h2>
-
-			<nav>
-				<ul>
-					<li>
-						<a href="#about">		
-							About
-						</a>
-					</li>
-					<li>
-						<a href="#services">
-							Services
-						</a>
-					</li>
-					<li>
-						<a href="#contact">
-							Contact
-						</a>
-					</li>
-				</ul>
-			</nav>
+				<div class="hamburger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
 			
-		</header>
-
-		<!-- ABOUT -->
-
-		<section>
-
-			<h3 id="about">
-				About
-			</h3>
-
-			<p id="bio">
-				Hello, I'm Cassandra! I'm a front-end developer who makes websites.
-			</p>
-
-			<h4 id="social-media">
-				Social Media
-			</h4>
-
-			<div class="node" id="facebook">
-
-				<a href="https://www.facebook.com/codingcass" target="_blank">
-
-					<img class="icons" src="icons/facebook-50.png" alt="Facebook" />
-
-				</a>
-
-			</div>
-
-			<div class="node" id="ko-fi">
-
-				<a href="https://ko-fi.com/codingcass" target="_blank">
-
-					<img class="icons" src="icons/ko-fi-50.png" alt="Ko-Fi" />
-
-				</a>
-
-			</div>
-
-			<div class="node" id="dribbble">
-
-				<a href="https://dribbble.com/visualcass" target="_blank">
-
-					<img class="icons" src="icons/dribbble.png" alt="Dribbble" />
-	
-				</a>
-
-			</div>
-
-			<div class="node" id="linkedin">
-
-				<a href="https://linkedin.com/in/cassandra-carlos" target="_blank">
-
-					<img class="icons" src="icons/linkedin.png" alt="LinkedIn" />
-	
-				</a>
-
-			</div>
-
-			<div class="node" id="linkedin">
-
-				<a href="https://github.com/codingcass" target="_blank">
-
-					<img class="icons" src="icons/github.png" alt="GitHub" />
-					
-				</a>
-
-			</div>
-
-			<h4 id="skills">
-				Skills
-			</h4>
-
-			<div class="node" id="html">
-
-				<img class="icons" src="icons/html-5-48.png" alt="HTML 5" />
-
-				<p>
-					HTML
-				</p>
-
-			</div>
-
-			<div class="node" id="css">
-
-				<img class="icons" src="icons/css-48.png" alt="CSS 3" />
-
-				<p>
-					CSS
-				</p>
-
-			</div>
-
-			<div class="node" id="javascript">
-
-				<img class="icons" src="icons/javascript-48.png" alt="Javascript" />
-
-				<p>
-					
-					JavaScript
-				
-				</p>
-
-			</div>
-
-			<div class="node" id="react">
-
-				<img class="icons" src="icons/react-icon.png" alt="React" />
-
-				<p>
-					
-					React
-				
-				</p>
-
-			</div>
-
-			<div class="node" id="figma">
-
-				<img class="icons" src="icons/figma-48.png" alt="Figma" />
-
-				<p>
-					
-					Figma
-				
-				</p>
-
-			</div>
-
-			<div class="node" id="wordpress">
-
-				<img class="icons" src="icons/wordpress-48.png" alt="Wordpress" />
-
-				<p>
-					
-					WordPress
-				
-				</p>
-
-			</div>
-
-		</section>
-
-		<!-- SERVICES -->
-
-		<section>
-
-			<h3 id="services">
-				Services
-			</h3>
-
-			<div class="container">
-
-				<div class="service" id="development">
-				
-					<img src="icon\frame.png" id="development-icon" alt="icon" />
-
-					<h4 id="development">
-						Website Development
-					</h4>
-
-					<p id="development">
-						I can build a stunning website from the ground-up that is responsive to all screen sizes.
-					</p>
-
+				<div class="links">
+					<a href="#about">About</a>
+					<a href="#projects">Projects</a>
+					<a href="#contact">Contact</a>
 				</div>
 
-				<div class="service" id="domain-hosting">
-				
-					<img src="icon\frame.png" id="domain-hosting" alt="icon" />
+			</content>
+		</nav>
 
-					<h4 id="domain-hosting">
-						Domain and Hosting
-					</h4>
-
-					<p id="domain-hosting">
-						I can help you launch your website on the internet with a custom domain name.
-					</p>
-
-				</div>
-
-				<div class="service" id="maintenance">
-				
-					<img src="icon\frame.png" id="maintenance" alt="icon" />
-
-					<h4 id="maintenance">
-						Regular Maintenance
-					</h4>
-
-					<p id="maintenance">
-						I can keep your website up-to-date and secure on a monthly basis.
-					</p>
-
-				</div>
-
-			</div>
-
-		</section>
-
-		<!-- CONTACT -->
-
-		<section>
-
-			<h3 id="contact">
-				Contact
-			</h3>
-
-			<p id="contact-info">
-				Use this form to reach me, or email me directly at codingcass@outlook.com
-			</p>
-
-			<form id="contact-form" action="https://formsubmit.co/codingcass@outlook.com" method="POST">
-				
-				<div id="form-name">
-
-					<h4>
-						Name
-					</h4>
-					
-					<input type="text" name="name" required>
-
-				</div>
-				
-				<div id="form-email">
-
-					<h4>
-						Email
-					</h4>
-					
-						<input type="email" name="email" required>
-
-				</div>
-
-				<div id="form-message">
-
-					<h4>
-						Message
-					</h4>
-
-						<textarea id="message" name="message" required></textarea>
-
-					<button type="submit">
-						Send
-					</button>
-
-				</div>
-
-			</form>
-
-		</section>
-
-		<!-- FOOTER -->
-
-		<footer id="footer">
-
-			<p>Thanks for visiting!</p>
-
-		</footer>
+		<!-- EXT. JAVASCRIPT -->
+		<script src="js/nav.js"></script>
 
 	</body>
 

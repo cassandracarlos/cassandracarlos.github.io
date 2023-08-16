@@ -1,0 +1,67 @@
+nav .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 2px;
+  margin: 3px 0;
+  background-color: #222;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+
+  .logo {
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .links {
+    border-top: solid 1.5px #222;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    gap: 0px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .links.active {
+    display: flex;
+  }
+
+  .links a {
+    padding: 10px 0;
+    border-bottom: solid 1.5px #222;
+  }
+
+  .links a:hover {
+    color: #fff;
+    background-color: #222;
+    transition: 0.075s;
+  }
+
+}
