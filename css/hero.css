@@ -4,10 +4,21 @@
     background-color: #ddd;
 }
 
+.hero-bio {
+    width: 50%;
+    font-size: 1.05rem;
+    margin: 0 auto;
+}
+
 @media (max-width: 768px) {
 
     .hero {
         padding: 240px 20px;
+    }
+
+    .hero-bio {
+        width: 100%;
+        margin: 0 auto;
     }
 
 }

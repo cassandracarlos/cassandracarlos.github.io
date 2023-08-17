@@ -1,18 +1,15 @@
-nav content {
-  display: flex;
-  width: 75%;
-}
-
-@media (max-width: 768px) {
-
-  nav content {
-      width: 100%;
-  }
-
-}
-
 nav {
   min-height: 60px;
+  box-shadow: 0px 4px 8px rgba(50, 50, 50, 0.2);
+  position: sticky;
+  background: #fff;
+  top: 0;
+}
+
+nav content {
+  display: flex;
+  padding-top: 10px;
+  width: 75%;
 }
 
 .logo {
@@ -29,7 +26,7 @@ nav {
   width: 25px;
   height: 2px;
   margin: 3px 0;
-  background-color: #222;
+  background-color: #111;
 }
 
 .links {
@@ -37,7 +34,16 @@ nav {
   gap: 30px;
 }
 
+.links a:hover {
+  color: #777;
+  transition: 0.075s;
+}
+
 @media (max-width: 768px) {
+
+  nav content {
+    width: 100%;
+  }
 
   .logo {
     text-align: center;
@@ -48,7 +54,7 @@ nav {
   }
 
   .links {
-    border-top: solid 1.5px #222;
+    border-top: solid 1.5px #111;
     display: none;
     flex-direction: column;
     position: absolute;
@@ -66,7 +72,7 @@ nav {
 
   .links a {
     padding: 10px 0;
-    border-bottom: solid 1.5px #222;
+    border-bottom: solid 1.5px #111;
   }
 
   .links a:hover {
