@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+  }
+  
+  .section {
+    box-sizing: border-box;
+    flex: 1;
+  }
+  
+  .left-section {
+    background-color: #ccc;
+  }
+  
+  .right-section {
+    background-color: #bbb;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  
+  .logos {
+    display: flex;
+}
+
+.logos img {
+  height: 32px;
+  width: 32px;
+}
+
+.node {
+  display: flex;
+  margin-right: 10px;
+  background: #ccc;
+}
+
+.contact-form{
+  width: 50%;
+  font-size: 1.05rem;
+  margin: 0 auto;
+}
+
+.contact-form h3, p {
+  margin: 0 auto;
+
+}
+
+textarea, input {
+  width: 100%;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 20px;
+}
