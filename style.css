@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@media (max-width: 896px) {
+    main {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .links {
+        display: none;
+        position: absolute;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, textarea, a {
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    display: block;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+}
+
+main {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+section div {
+    height: 40vh;
+    display: flex;
+    border: 1px dotted black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.icons img, .side-section img {
+    width: 32px;
+    display: inline-block;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+.center-section {
+    flex: 2;
+    text-align: center;
+}
+
+.center-section img {
+    width: 64px;
+    padding: 10px 0;
+}
+
+.side-section {
+    flex: 1;
+}
+
+.side-section ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.line {
+    width: 25px;
+    height: 2px;
+    margin: 3px 0;
+    background-color: #111;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
