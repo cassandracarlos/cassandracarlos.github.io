@@ -1,43 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
-body, input, textarea, a {
-    font-family: 'Lato', sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-h2 {
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 75%;
+    border: 1px solid black;
+}
+
+img {
+    display: inline-block;
+    height: 32px;
+    width: auto;
+}
+
+form {
     display: block;
-}
-
-a {
-    color: black;
-    text-decoration: none;
 }
 
 textarea, input {
     width: 100%;
     padding: 10px;
     display: block;
-}
-
-button {
-    padding: 10px;
-    width: 100%;
-}
-
-section div {
-    display: flex;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.icons img, .navbar img {
-    width: 32px;
-    display: inline-block;
+    font-family: 'Poppins', sans-serif;
 }
