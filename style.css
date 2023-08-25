@@ -20,7 +20,7 @@ main {
     margin: 0 auto;
     padding: 20px;
     width: 75%;
-    border: 1px solid black;
+    border: 2px dotted #555;
 }
 
 img {
