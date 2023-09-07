@@ -1,58 +1,62 @@
-HOW TO:
+# Project Title
 
-1. Make a split navigation bar.
-2. Make icons float left-to-right.
-3. Make projects float left-to-right.
-4. Make the contact form match website.
+Simple overview of use/purpose.
 
-(For basic MVP website)
+## Description
 
-/* */
+An in-depth paragraph about your project and overview of use.
 
-HEADER      .header
+## Getting Started
 
-h2
-nav     ul  li
+### Dependencies
 
-ABOUT       .section
+* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
+* ex. Windows 10
 
-h3      .title #about
-p       .bio
-a       .cta
+### Installing
 
-SOCIAL MEDIA    div.subsection
+* How/where to download your program
+* Any modifications needed to be made to files/folders
 
-h4      .subtitle
-div     .node #dribbble     a.img
-div     .node #linkedin     a.img
-div     .node #github       a.img
+### Executing program
 
-SKILLS          div.subsection
+* How to run the program
+* Step-by-step bullets
+```
+code blocks for commands
+```
 
-h4      .subtitle
-div     .node #html         img p
-div     .node #css          img p
-div     .node #javascript   img p
-div     .node #react        img p
-div     .node #figma        img p
-div     .node #wordpress    img p
+## Help
 
-PROJECTS    .section
+Any advise for common problems or issues.
+```
+command to run if program contains helper info
+```
 
-h3      .title #projects
-div     .entry
-(fill later)
-div     .entry
-(fill later)
-div     .entry
-(fill later)
+## Authors
 
-CONTACT     .section
+Contributors names and contact info
 
-h3      .title #contact
-p       (fill later)
-(contact form)
+ex. Dominique Pizzie  
+ex. [@DomPizzie](https://twitter.com/dompizzie)
 
-FOOTER      .footer
+## Version History
 
-p
+* 0.2
+    * Various bug fixes and optimizations
+    * See [commit change]() or See [release history]()
+* 0.1
+    * Initial Release
+
+## License
+
+This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+
+## Acknowledgments
+
+Inspiration, code snippets, etc.
+* [awesome-readme](https://github.com/matiassingers/awesome-readme)
+* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* [dbader](https://github.com/dbader/readme-template)
+* [zenorocha](https://gist.github.com/zenorocha/4526327)
+* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
