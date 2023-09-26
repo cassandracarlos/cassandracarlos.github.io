@@ -1,3 +1,1 @@
-# Personal Website
-
-My personal website—comprised of my bio, portfolio, skills and contact form.
+make a wireframe kit in figma. look up: "Design System"
