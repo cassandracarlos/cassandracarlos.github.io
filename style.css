@@ -52,6 +52,10 @@ ul {
     padding: 0;
 }
 
+#about-me a {
+    color: rgb(112, 112, 180);
+}
+
 form {
     display: block;
     margin: 15px 0;
