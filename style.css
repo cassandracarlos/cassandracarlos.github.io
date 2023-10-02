@@ -15,6 +15,11 @@ body {
     height: 100vh;
 }
 
+h1 {
+    line-height: 1.1;
+    font-size: 1.85rem;
+}
+
 /* Make #tech-stack a flex container */
 #tech-stack {
     display: flex;
@@ -32,28 +37,35 @@ body {
     max-width: 50px; /* Limit the image width as needed */
 }
 
+.divider {
+    margin: 7.5px 0;
+    height: 2.5px;
+    width: 100%;
+    background-color: #333;
+}
+
 main {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 24px 30px;
     width: 85%;
-    border: 2px dotted #555;
+    border: 2px solid #666;
 }
 
 img {
     display: inline-block;
-    height: 32px;
+    height: 40px;
     width: auto;
 }
 
 ul {
-    margin: 15px 0;
-    list-style-type: none;
-    padding: 0;
+    /*margin: 15px 0;*/
+    /*list-style-type: none;*/
+    /*padding: 0;*/
 }
 
 #about-me a {
-    color: rgb(112, 112, 180);
+    color: #333;
 }
 
 form {
@@ -64,6 +76,7 @@ form {
 textarea, input {
     width: 100%;
     padding: 10px;
+    margin: 5px 0;
     display: block;
     font-family: 'Poppins', sans-serif;
 }
