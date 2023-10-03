@@ -12,12 +12,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 h1 {
     line-height: 1.1;
     font-size: 1.95rem;
+    margin-bottom: 1.5px;
 }
 
 /* Make #tech-stack a flex container */
@@ -44,18 +45,23 @@ h1 {
     background-color: #333;
 }
 
+.container {
+    border: 2px solid #555;
+    padding: 30px 56px;
+    margin: 12px;
+}
+
 main {
-    max-width: 800px;
+    max-width: 75%;
     margin: 0 auto;
-    padding: 24px 30px;
-    width: 85%;
-    border: 2px solid #666;
+    border: 3.5px solid #333;
 }
 
 img {
     display: inline-block;
-    height: 40px;
+    height: 36px;
     width: auto;
+    margin-right: 2.5px;
 }
 
 ul {
@@ -80,3 +86,9 @@ textarea, input {
     display: block;
     font-family: 'Poppins', sans-serif;
 }
+
+@media only screen and (max-width: 768px) {
+    main {
+        max-width: 90%;
+    }
+  }
