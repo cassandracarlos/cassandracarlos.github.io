@@ -38,23 +38,16 @@ h1 {
     max-width: 36px; /* Limit the image width as needed */
 }
 
-.divider {
-    margin: 7.5px 0;
-    height: 2.5px;
-    width: 100%;
-    background-color: #333;
-}
-
 .container {
-    border: 2px solid #555;
+    border: 1.5px solid #333;
     padding: 30px 56px;
-    margin: 12px;
+    margin: 8px;
 }
 
 main {
     max-width: 75%;
     margin: 0 auto;
-    border: 3.5px solid #333;
+    border: 3.5px solid #222;
 }
 
 img {
@@ -87,8 +80,11 @@ textarea, input {
     font-family: 'Poppins', sans-serif;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     main {
         max-width: 90%;
+    }
+    .container {
+        padding: 30px 36px;
     }
   }
