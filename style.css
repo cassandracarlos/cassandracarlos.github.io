@@ -16,9 +16,9 @@ body {
 }
 
 h1 {
-    line-height: 1.1;
+    line-height: 1.05;
     font-size: 1.95rem;
-    margin-bottom: 1.5px;
+    margin-bottom: 1px;
 }
 
 /* Make #tech-stack a flex container */
