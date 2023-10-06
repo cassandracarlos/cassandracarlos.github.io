@@ -15,6 +15,15 @@ body {
     min-height: 100vh;
 }
 
+#tools-list a {
+    color: #333;
+    text-decoration: none;"
+}
+
+#tools-list a:hover {
+    color: #666;
+}
+
 h1 {
     line-height: 1.05;
     font-size: 1.95rem;
