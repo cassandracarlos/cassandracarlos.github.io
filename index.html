@@ -1,84 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Cassandra Carlos | Web Developer</title>
 </head>
-
 <body>
 
-	<!-- Navigation Bar -->
-	<nav>
+	<!-- Hero -->
+	<header>
+
+		<span id="hero"></span>
 
 		<div class="container">
+
+			<h1>CodingCass</h1>
 
 			<ul>
 
-				<li><a href="#home">Home</a></li>
+				<li><a href="#templates">Templates</a></li>
+				<li><a href="#blog">Blog</a></li>
 				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
-	
+				<li><a href="#get-in-touch">Get in Touch</a></li>
+
 			</ul>
-
-		</div>
-
-	</nav>
-
-	<!-- Hero Section -->
-	<header>
-
-		<span id="home"></span>
-
-		<div class="container">
-
-			<h1>Cassandra Carlos</h1>
 
 		</div>
 
 	</header>
 
-	<!-- About Me -->
-	<section id="about">
+	<!-- Templates -->
+	<sections>
+
+		<span id="templates"></span>
+
+		<div class="container">
+
+			<h2>Shop Themes and Templates</h2>
+
+			<!--<h3>WordPress Themes</h3>
+			<a href="https://codingcass.gumroad.com/l/lhkhg">WordPress Product</a>
+
+			<h3>Presentation Designs</h3>
+			<a href="https://codingcass.gumroad.com/l/lhkhg">Powerpoint Product</a>
+
+			<h3>Notion Templates</h3>
+			<a href="https://codingcass.gumroad.com/l/lhkhg">Notion Product</a>-->
+
+		</div>
+
+	</sections>
+
+	<!-- Blog -->
+	<section>
+
+		<span id="blog"></span>
+
+		<div class="container">
+
+			<h2>Learning to Code?</h2>
+
+			<a href="https://ourcodingcorner.com">Coding Corner</a>
+			<p>Your one-stop resource hub for website and game development.</p>
+
+		</div>
+
+	</section>
+
+	<!-- About -->
+	<section>
 
 		<span id="about"></span>
 
 		<div class="container">
 
+			<h2>About CodingCass</h2>
+
+			<!--<p>Welcome to my website! I'm Cass and help busy people like you present your stuff in the best way possible. Whether you're here to browse some templates for your next big project, or learning how to make your first game from scratch, I've got you covered.</p>-->
+
+			<h3>My Toolbox</h3>
+			<p>Here are some of the tools I use:</p>
+			
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<!--<li>Framer</li>-->
+				<li>WordPress</li>
+				<!--<li>PowerPoint</li>-->
+				<!--<li>Google Slides</li>-->
+				<li>Notion</li>
+				<li>JavaScript</li>
+				<li>Figma</li>
+			</ul>
+
 		</div>
 
 	</section>
 
-	<!-- Projects -->
-	<section id="portfolio">
+	<!-- Get in Touch (Contact) -->
+	<section>
 
-		<span id="projects"></span>
-
-		<div class="container">
-
-		</div>
-
-	</section>
-
-	<!-- Contact -->
-	<section id="contact">
-
-		<span id="contact"></span>
+		<span id="get-in-touch"></span>
 
 		<div class="container">
+
+			<h2>Get in Touch</h2>
 	
 			<form id="contact-form" action="https://formsubmit.co/codingcass@outlook.com" method="POST" autocomplete="off">
 	
-				<p>Get in touch:</p>
+				<p>Got a question, want to work together or just want to chat? Use this contact form to send me a message.</p>
 	
-				<input type="text" name="name" required="" placeholder="your name...">
+				<p>Your Name:</p>
+
+				<input type="text" name="name" required="" placeholder="Name">
 	
-				<input type="email" name="email" required="" placeholder="your email...">
-	
-				<textarea id="message" name="message" required="" placeholder="your message..."></textarea>
+				<p>Your Email:</p>
+
+				<input type="email" name="email" required="" placeholder="Email">
+				
+				<p>Your Message:</p>
+
+				<textarea id="message" name="message" required="" placeholder="Message"></textarea>
 	
 				<button type="submit">Send</button>
 	
@@ -88,7 +131,7 @@
 
 	</section>
 
-	<!-- Footer Section -->
+	<!-- Social Links (Footer) -->
 	<footer>
 
 		<div class="container">
@@ -104,14 +147,20 @@
 				<a href="https://github.com/codingcass" target="_blank"><img src="images/github.png"></a>
 	
 			</div>
+
+			<h3>CodingCass</h3>
+
+			<p>CodingCass is a website designer and developer from Vancouver, British Columbia.</p>
 	
 			<p>Sitemap</p>
 	
 			<ul>
-				<li><a href="#home">Home</a></li>
+
+				<li><a href="#templates">Templates</a></li>
+				<li><a href="#blog">Blog</a></li>
 				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#get-in-touch">Get in Touch</a></li>
+
 			</ul>
 
 			<p>&copy; Cassandra Carlos 2023. All Rights Reserved.</p>
@@ -119,6 +168,9 @@
 		</div>
 
 	</footer>
+
+	<!-- JavaScript -->
+	<script src="https://gumroad.com/js/gumroad.js"></script>
 
 </body>
 </html>

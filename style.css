@@ -34,5 +34,7 @@ textarea, input {
 }
 
 .container {
-    margin: 0;
+    margin: 5px 125px;
+    padding: 10px;
+    background-color: #DC046C;
 }
