@@ -32,9 +32,3 @@ textarea, input {
     display: block;
     font-family: 'Poppins', sans-serif;
 }
-
-.container {
-    margin: 5px 125px;
-    padding: 10px;
-    background-color: #DC046C;
-}
