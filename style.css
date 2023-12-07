@@ -8,13 +8,13 @@ body {
 
 * {
     margin: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
 /* Style the navigation bar */
 nav {
     background-color: #f8f8f8;
-    padding: 1em;
     position: fixed; /* Make the nav bar fixed */
     width: 100%; /* Make the nav bar full width */
     top: 0; /* Stick the nav bar to the top */
@@ -24,22 +24,33 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
+    width: 25%; /* Each li takes up 1/4 of the nav bar width */
     display: inline-flex;
+    justify-content: center; /* Center the content */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-size: 1em;
-    padding: 0.5em;
+    font-weight: 600;
+    padding: 1.5em;
+    display: block; /* Make the a element take up the full space of the li */
+    text-align: center; /* Center the text */
+    width: 100%; /* Make the a element take up the full width of the li */
 }
 
 nav ul li a:hover {
-    color: #007BFF;
+    color: #f8f8f8;
+    background-color: #248eff;
 }
 
 /* Responsive design */
@@ -57,7 +68,7 @@ nav ul li a:hover {
 /* Add some padding to the top of the main content to prevent it from being covered by the nav bar */
 main {
     margin-top: 100px; /* Adjust this value based on the height of your nav bar */
-    padding: 0 40px;
+    padding: 0 90px;
     font-size: 18px;
     text-align: justify;
 }
@@ -65,11 +76,37 @@ main {
 /* If you have sections in your main, you can style them separately */
 main section {
     margin-bottom: 20px;
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    text-align: center; /* Center the text */
+}
+
+main #home {
+    height: 75vh;
+    background-color: #F9F9F9;
+}
+
+main #about {
+    height: 105vh;
+    background-color: #A9F9F9;
+}
+
+main #games {
+    height: 110vh;
+    background-color: #F9A9F9;
+}
+
+main #contact {
+    height: 110vh;
+    background-color: #F9F9A9;
 }
 
 /* If you have headings in your main, you can style them separately */
 main h1, main h2, main h3 {
     color: #333;
+    font-size: 2.25em;
     margin-bottom: 10px;
 }
 
@@ -90,13 +127,10 @@ main a:hover {
 }
 
 footer {
-    background-color: #f8f8f8;
+    color: #F9F9F9;
+    background-color: #333;
     padding: 1.5em 1em;
     text-align: center;
     width: 100%;
     bottom: 0;
-}
-
-footer p {
-    color: #333;
 }
