@@ -88,13 +88,13 @@ main #home {
     background-color: #F9F9F9;
 }
 
-main #about {
-    height: 105vh;
+main #games {
+    height: 110vh;
     background-color: #A9F9F9;
 }
 
-main #games {
-    height: 110vh;
+main #about {
+    height: 105vh;
     background-color: #F9A9F9;
 }
 
