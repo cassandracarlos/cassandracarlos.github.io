@@ -1,0 +1,11 @@
+Outline:
+
+[ ] Boilerplate <!doctype html> <head></head> <body></body>
+[ ] meta charset="utf-8" and other metadata
+[ ] link rel="icon" href="(/favicon.img)
+
+Structure:
+
+[ ] <main> elements and <section> elements
+[ ] navigation and class names
+[ ]
