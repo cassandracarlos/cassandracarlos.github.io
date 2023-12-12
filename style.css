@@ -14,9 +14,7 @@ body {
 
 /* Style the navigation bar */
 nav {
-    background-color: #f8f8f8;
-    position: fixed; /* Make the nav bar fixed */
-    width: 100%; /* Make the nav bar full width */
+    width: 80vw; /* Make the nav bar full width */
     top: 0; /* Stick the nav bar to the top */
     z-index: 100; /* Ensure the nav bar is on top of other elements */
 }
@@ -26,6 +24,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     padding: 0;
+    align-items: center;
     margin: 0;
 }
 
@@ -35,33 +34,38 @@ nav ul li {
     justify-content: center; /* Center the content */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
+    font-weight: 600;
+    padding: 1.5em;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #222;
     font-size: 1em;
     font-weight: 600;
-    padding: 1.5em;
+    /*padding: 1.5em;*/
     display: block; /* Make the a element take up the full space of the li */
     text-align: center; /* Center the text */
     width: 100%; /* Make the a element take up the full width of the li */
 }
 
 nav ul li a:hover {
-    color: #f8f8f8;
-    background-color: #248eff;
+    background-color: #eee;
 }
 
-/* Responsive design */
-@media (max-width: 600px) {
+/* Responsive navigation bar */
+@media screen and (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        flex-direction: row; /* Stack the links vertically */
+    }
+
+    nav ul li {
+        width: 100%; /* Each li takes up the full width */
     }
 
     nav ul li a {
-        text-align: center;
-        padding: 0.5em 0;
+        padding: 0.5em; /* Reduce padding */
+        font-size: 0.9em; /* Reduce font size */
     }
 }
 
@@ -71,6 +75,22 @@ main {
     padding: 0 90px;
     font-size: 18px;
     text-align: justify;
+}
+
+main section img {
+    width: 80vw;
+    height: auto;
+    border-radius: 25px;
+}
+
+.dark-bg {
+    background-color: #222;
+    /**/min-height: 100vh;
+}
+
+.socials img {
+    height: 32px;
+    width: auto;
 }
 
 /* If you have sections in your main, you can style them separately */
@@ -127,8 +147,6 @@ main a:hover {
 }
 
 footer {
-    color: #F9F9F9;
-    background-color: #333;
     padding: 1.5em 1em;
     text-align: center;
     width: 100%;
