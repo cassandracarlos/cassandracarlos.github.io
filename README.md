@@ -1,5 +1,17 @@
 # Personal Website
 
+Creating a README for your GitHub Pages website showcasing your work as a game designer and developer is a great idea to keep track of your progress and provide context for anyone who might interact with your repository. Here's a suggested structure:
+
+```
+.
+├── rainbow-rocket
+│   └── gold.js
+│       └── platinum.js
+├── sword-shield
+│   └── zacian.JSON
+│       └── zamazenta.JSON
+```
+
 ## Introduction
 
 Briefly introduce my GitHub Pages website and its purpose. Explain that it's a showacase of my work as a game designer and developer.
@@ -27,9 +39,6 @@ If I have a custom domain for my GitHub Pages site, explain how it's set up and 
 Outline my future plans for the portfolio. This could include upcoming projects, features you plan to add, or any other improvements you're considering.
 
 ---
-
-Creating a README for your GitHub Pages website showcasing your work as a game designer and developer is a great idea to keep track of your progress and provide context for anyone who might interact with your repository. Here's a suggested structure:
-
 Project Title (Your Name)'s Game Portfolio
 Introduction
 Briefly introduce your GitHub Pages website and its purpose. Explain that it's a showcase of your work as a game designer and developer, emphasizing that it's a work in progress.
