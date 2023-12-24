@@ -5,6 +5,10 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.socials img {
+    height: 2em;
+}
 /*
 * {
     margin: 0;
