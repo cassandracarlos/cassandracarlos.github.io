@@ -11,13 +11,13 @@ body {
     padding: 0;
 }
 
-.hero ul {
-    margin: 0;
-}
-
-.header img {
+header img {
     width: 100%;
     height: auto;
+}
+
+.hero ul {
+    margin: 0;
 }
 
 .socials img {
