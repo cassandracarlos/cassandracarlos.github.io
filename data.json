@@ -1,0 +1,31 @@
+{
+    "title": "My Awesome Website",
+    "additionalContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus justo id ex dapibus, vel ultrices nisl ultricies.",
+    "content": "<p>Welcome to my website!</p>"
+  }
+
+/*
+{
+  "title": "My Awesome Website",
+  "menu": [
+    { "label": "Home", "link": "#" },
+    { "label": "About", "link": "#" },
+    { "label": "Services", "link": "#" },
+    { "label": "Contact", "link": "#" }
+  ],
+  "content": "<p>Welcome to my website! Feel free to explore.</p>",
+  "additionalContent": [
+    {
+      "title": "Section 1",
+      "content": "<p>Content for section 1 goes here.</p>"
+    },
+    {
+      "title": "Section 2",
+      "content": "<p>Content for section 2 goes here.</p>"
+    },
+    {
+      "title": "Section 3",
+      "content": "<p>Content for section 3 goes here.</p>"
+    }
+  ]
+}
