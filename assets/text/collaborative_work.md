@@ -8,7 +8,7 @@
 * Created for the New Year, New Skills Game Jam
 * hosted by Bitter Sails Games on itch.io
 * January 7th 2024 to January 14th 2024
-* I did UX/UI design and some coding
+* Helped with UI design and coding
 ```
 ## Small Towns
 ### RPG Maker Asset Pack
