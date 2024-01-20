@@ -1,7 +1,11 @@
 # Personal Work
-## 
-### 
-[Free Asset Pack](https://itch.io/embed/2474335)
 ```
-* -
+* ## Assets
+* ### Cozy Camping
+* [Download for free on Itch.io](https://itch.io/embed/2474335)
+```
+```
+* ## Blog
+* ### Vertical Slice
+* [Read on Ko-Fi.com](https://ko-fi.com/cassjune)
 ```
