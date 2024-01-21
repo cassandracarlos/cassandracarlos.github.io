@@ -1,4 +1,4 @@
-# Cassandra June Carlos
+# Cassandra Carlos
 ## Artist and Designer
 
 ### Work
