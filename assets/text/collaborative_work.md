@@ -4,11 +4,12 @@
 [View on itch.io](https://maib.itch.io/montymayhem)
 ```
 * Made in Godot 4.2
-* First game created by Studio Gravy
-* Created for the New Year, New Skills Game Jam
-* hosted by Bitter Sails Games on itch.io
-* January 7th 2024 to January 14th 2024
-* Helped with UI design and coding
+* Working game prototype
+* Created by Studio Gravy
+* Jan 7th to Jan 14th 2024
+* New Year, New Skills Game Jam
+* host: Bitter Sails Games on itch.io
+* I helped with UI design and coding
 ```
 ## Small Towns
 ### RPG Maker Asset Pack
