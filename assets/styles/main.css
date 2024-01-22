@@ -5,10 +5,11 @@
     padding: 0;
 }
 
-body {
+body, form input, form textarea {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
 section {
     padding: 25px 0;
 }
+
