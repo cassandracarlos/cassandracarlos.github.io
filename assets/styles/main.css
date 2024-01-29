@@ -9,10 +9,7 @@ body, form input, form textarea {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
-section {
-    padding: 25px 0;
-}
-
-nav {
-    padding: 0 0 25px 0;
+img {
+    max-height: 75%;
+    max-width: 75%;
 }

@@ -4,3 +4,12 @@ body {
     margin: auto;
     max-width: 50%;
 }
+nav {
+    height: 10vh;
+}
+main {
+    height: 80vh;
+}
+footer {
+    min-height: 10vh;
+}

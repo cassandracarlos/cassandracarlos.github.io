@@ -61,3 +61,36 @@
         * Seek constructive feedback on your work from peers, mentors, or online communities
         * Use feedback to refine and enhance your design skills
 ```
+
+```
+Cassandra Carlos
+Cassandra Carlos – UI Design Portfolio
+Projects Resume Contact
+Hi, I’m Cassandra!
+I’m a UI designer working on indie games.
+I'm passionate about creating sensible interaction patterns and helping designers be more efficient in 
+their work.
+See my work
+Select Work
+Most recently, I designed the Search, Age Gating and Voice Reporting experience for Fortnite. My past 
+work includes the Social Menu system and Social Tags. The rest of my work is under NDA at the moment.
+View My Resume
+Monty Mayhem
+Ui/Ux Design
+This is the description.
+View Process
+Soap Swarm
+Game Development
+This is the description.
+View Process
+Blue Ivy House
+Website Development
+This is the description.
+View Process
+Get in Touch
+If you’d like to work together or chat, send me an email using the form below.
+Your Name
+Your Email
+Your Message
+Send
+```
