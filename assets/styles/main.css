@@ -29,6 +29,7 @@ main {
 header img {
     height: 60vh;
     width: 100%;
+    border-radius: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
