@@ -27,8 +27,8 @@ main {
     min-height: 100vh;
 }
 header img {
-    min-height: 60vh;
-    max-height: 60vh;
+    height: 60vh;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -38,31 +38,31 @@ header img {
 }
 .column-left {
     flex: 60%;
-    padding: 25px;
+    padding-top: 25px;
 }
 .about-me {
     top: 10px;
     position: sticky;
-    /*font-size: 1.15em;*/
+    font-size: 1.05em;
 }
 .about-me p {
     margin-bottom: 15px;
 }
 .column-right {
     flex: 40%;
-    padding: 25px;
+    padding-top: 25px;
 }
 .project img {
     border-radius: 10px;
     width: 100%;
     height: auto;
-    /*margin-bottom: 5px;
-    border: 1px #eee solid;*/
+    margin-bottom: 5px;
+    border: 1px #858585 solid;
+}
+.project {
+    margin-bottom: 25px;
 }
 /*
-.project {
-    margin-bottom: 30px;
-}
 form {
     background: #fff;
     display: flex;
