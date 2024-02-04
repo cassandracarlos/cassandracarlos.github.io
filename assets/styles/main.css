@@ -34,34 +34,46 @@ header img {
     margin-left: auto;
     margin-right: auto;
 }
+a {
+    color: rgb(25, 3, 83);
+}
+a:hover {
+    color: rgb(87, 123, 255);
+}
 .container {
     display: flex;
 }
 .column-left {
     flex: 60%;
-    padding-top: 25px;
+    padding-top: 35px;
 }
 .about-me {
-    top: 10px;
+    top: 25px;
     position: sticky;
     font-size: 1.05em;
 }
 .about-me p {
     margin-bottom: 15px;
+    padding-right: 50px;
 }
 .column-right {
     flex: 40%;
-    padding-top: 25px;
+    padding-top: 35px;
+    padding-left: 25px;
 }
 .project img {
     border-radius: 10px;
     width: 100%;
     height: auto;
-    margin-bottom: 5px;
-    border: 1px #858585 solid;
+    margin-bottom: 10px;
+    opacity: 75%;
+    /*border: 1px #858585 solid;*/
 }
 .project {
     margin-bottom: 25px;
+}
+.project p {
+    margin-bottom: 2px;
 }
 /*
 form {
@@ -102,5 +114,5 @@ button {
     margin: 0 auto;
 }
 .copyright p {
-    margin: 10px 0 10px 25px;
+    margin: 15px 0;
 }
