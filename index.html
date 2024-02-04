@@ -32,7 +32,7 @@
                         <div class="bio">
                             <p>Hi, I'm Cassandra!</p>
                             <p>I'm an artist and designer who makes video games. My main tools are Godot and <a href="https://github.com/cassandracarlos" target="_blank">GitHub</a> for game development, Aseprite for drawing and Figma for design. I also know a bit of coding, namely GDScript, HTML and CSS.</p>
-                            <p>Right now, I'm reworking my website and social media accounts, but I'll gradually post my projects throughout the next month or so. If you'd like to work together or chat, send me an email at cassjunecarlos@gmail.com</p>
+                            <p id="emailCopy">Right now, I'm reworking my website and social media accounts, but I'll gradually post my work throughout the next month or so. If you'd like to work together or chat, send me an email at <a href="#" onclick="copyToClipboard('cassjunecarlos@gmail.com')">cassjunecarlos@gmail.com</a></p>
                             <p>Thanks for checking out my website!</p>
                             <small style="color: #aaa">Last updated 2024-02-04</small>
                         </div>
@@ -43,13 +43,14 @@
                         <img src="assets/images/Rectangle 4.png">
                         <h3>Game - Monty Mayhem</h3>
                         <p>UX/UI and Programming</p>
-                        <a href="" target="_blank">View Process</a>
+                        <a href="https://maib.itch.io/montymayhem" target="_blank">Itch.io Page</a>
+                        <a href="project_1.html" target="_blank">View Process</a>
                     </div>
                     <div class="project">
                         <img src="assets/images/Rectangle 4.png">
                         <h3>Personal Work</h3>
-                        <p>UX/UI Design and Pixel Art</p>
-                        <a href="" target="_blank">View Work</a>
+                        <p>Game Design and Pixel Art</p>
+                        <a href="project_2.html" target="_blank">View Work</a>
                     </div>
                 </div>
             </div>
@@ -69,5 +70,16 @@
         <div class="copyright">
             <p>© 2024 Cassandra Carlos. All Rights Reserved.</p>
         </div>
+        <script>
+            function copyToClipboard(text) {
+            var input = document.createElement('textarea');
+            input.value = text;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand('copy');
+            document.body.removeChild(input);
+            alert('Email address copied to clipboard: ' + text);
+            }
+        </script>
     </body>
 </html>
