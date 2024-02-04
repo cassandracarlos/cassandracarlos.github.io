@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 body, form input, form textarea {
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-family: 'Merriweather Sans', 'Lato', Arial, Helvetica, sans-serif;
+    line-height: 24px;
 }
 .social-link {
     display: inline-block;
@@ -34,14 +36,17 @@ header img {
     margin-left: auto;
     margin-right: auto;
 }
-a {
+.about-me a {
     color: rgb(17, 43, 149);
 }
-a:hover {
+.about-me a:hover {
     color: rgb(87, 123, 255);
 }
 .container {
     display: flex;
+}
+.social-link img {
+    margin-right: 5px;
 }
 .column-left {
     flex: 60%;
@@ -64,15 +69,32 @@ a:hover {
 .project img {
     border-radius: 10px;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 10px;
-    opacity: 75%;
+}
+.project a img:hover {
+    filter: brightness(85%);
+    transition: .095s;
 }
 .project {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
-.project p {
-    margin-bottom: 2px;
+.project-links a {
+    padding: 7.5px;
+    /*border: 2px solid rgb(111, 142, 255);*/
+    border-radius: 5px;
+    background-color: rgb(133, 158, 255);
+    color: #ffffff;
+    font-size: .9rem;
+    text-decoration: none;
+    margin-right: 1.5px;
+}
+.project-links a:hover {
+    background-color: rgb(87, 120, 241);
+    transition: .095s;
+}
+.project-links {
+    margin-top: 10px;
 }
 /*
 form {
@@ -114,4 +136,5 @@ button {
 }
 .copyright p {
     margin: 10px 0;
+    font-size: .9rem;
 }
