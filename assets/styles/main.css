@@ -6,7 +6,6 @@
 }
 body, form input, form textarea {
     font-family: 'Merriweather Sans', 'Lato', Arial, Helvetica, sans-serif;
-    line-height: 24px;
 }
 .social-link {
     display: inline-block;
@@ -25,7 +24,7 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 1000px;
-    margin: 25px auto;
+    margin: 25px auto 10px auto;
     min-height: 100vh;
 }
 header img {
@@ -56,6 +55,7 @@ header img {
     top: 25px;
     position: sticky;
     font-size: 1.05em;
+    line-height: 26px;
 }
 .about-me p {
     margin-bottom: 15px;
@@ -76,6 +76,10 @@ header img {
     filter: brightness(85%);
     transition: .095s;
 }
+.project p {
+    font-size: .9rem;
+    margin: 5px 0;
+}
 .project {
     margin-bottom: 30px;
 }
@@ -94,37 +98,8 @@ header img {
     transition: .095s;
 }
 .project-links {
-    margin-top: 10px;
+    margin-top: 12.5px;
 }
-/*
-form {
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    padding: 0 25px;
-}
-input {
-    width: 100%;
-    box-sizing: border-box;
-}
-@media (min-width: 600px) {
-    .form-input {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-}
-form h3, form p {
-    margin-bottom: 20px;
-}
-input, textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-}
-button {
-    padding: 10px 0;
-}
-*/
 .divider {
     height: 1px;
     width: 100%;
@@ -135,6 +110,6 @@ button {
     margin: 0 auto;
 }
 .copyright p {
-    margin: 10px 0;
+    margin: 12.5px 0;
     font-size: .9rem;
 }
