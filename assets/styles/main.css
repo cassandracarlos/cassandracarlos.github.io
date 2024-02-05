@@ -59,12 +59,12 @@ header img {
 }
 .about-me p {
     margin-bottom: 15px;
-    padding-right: 50px;
+    padding-right: 25px;
 }
 .column-right {
     flex: 40%;
     padding-top: 35px;
-    padding-left: 25px;
+    padding-left: 15px;
 }
 .project img {
     border-radius: 10px;
@@ -85,7 +85,6 @@ header img {
 }
 .project-links a {
     padding: 7.5px;
-    /*border: 2px solid rgb(111, 142, 255);*/
     border-radius: 5px;
     background-color: rgb(133, 158, 255);
     color: #ffffff;
