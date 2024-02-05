@@ -7,6 +7,9 @@
 body, form input, form textarea {
     font-family: 'Merriweather Sans', 'Lato', Arial, Helvetica, sans-serif;
 }
+small {
+    color: #555;
+}
 .social-link {
     display: inline-block;
     vertical-align: middle;
