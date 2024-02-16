@@ -9,28 +9,33 @@
     <body>
         <main>
             <div class="column-left">
-                <div class="social">
-                    <div class="social-link">
-                        <img src="assets/socials/instagram.png" alt="Link to my Instagram profile.">
-                        <a href="https://instagram.com/gamecass/" target="_blank">gamecass</a>
-                    </div>
-                    <div class="social-link">
-                        <img src="assets/socials/itchio.png" alt="Link to my Itch.io profile.">
-                        <a href="https://casscarlos.itch.io/" target="_blank">cassandracarlos</a>
+                <div class="sticky-content">
+                    <div class="about">
+                        <p id="emailcopy">Hi, I'm Cassandra!</p>
+                        <p>I'm an artist and designer who makes video games. My main tools are Godot and <a href="https://github.com/cassandracarlos" target="_blank">GitHub</a> for game development, Aseprite for pixel art and Figma for design. I also know a bit of coding, namely GDScript, HTML and CSS.</p>
+                        <p>Right now, I'm reworking my website and social media accounts, but I'll gradually post my work throughout the next month or so. If you'd like to work together or chat, send me an email at <a href="#" onclick="copyToClipboard('cassjunecarlos@gmail.com')">cassjunecarlos@gmail.com</a></p>
+                        <p>Thanks for checking out my website!</p>
                     </div>
                     <div class="social-link">
                         <img src="assets/socials/linkedin.png" alt="Link to my LinkedIn profile.">
                         <a href="https://www.linkedin.com/in/cassandracarlos/" target="_blank">cassandracarlos</a>
                     </div>
                 </div>
-                <div class="about">
-                    <p id="emailcopy">Hi, I'm Cassandra!<br>I'm an artist and designer who makes video games. My main tools are Godot and <a href="https://github.com/cassandracarlos" target="_blank">GitHub</a> for game development, Aseprite for pixel art and Figma for design. I also know a bit of coding, namely GDScript, HTML and CSS.<br> Right now, I'm reworking my website and social media accounts, but I'll gradually post my work throughout the next month or so. If you'd like to work together or chat, send me an email at <a href="#" onclick="copyToClipboard('cassjunecarlos@gmail.com')">cassjunecarlos@gmail.com</a><br>Thanks for checking out my website!</p>
-                </div>
             </div>
             <div class="column-right">
-                <div class="project">
+                <div class="project ss">
+                    <a href="assets/pages/soap.html"><img src="assets/images/thumbnail_soap.png"></a>
+                    <h2>Soap Swarm</h2>
+                    <small>Game Design and Programming</small>
+                    <p>Endless runner in development by a two-person team</p>
+                    <div class="project-links">
+                        <a style="background-color: rgb(197, 197, 197);">Itch.io</a>
+                        <a href="assets/pages/soap.html">Process</a>
+                    </div>
+                </div>
+                <div class="project mm">
                     <a href="https://maib.itch.io/montymayhem" target="_blank"><img src="assets/images/thumbnail_monty.png"></a>
-                    <h3>Monty Mayhem</h3>
+                    <h2>Monty Mayhem</h2>
                     <small>UX/UI and Programming</small>
                     <p>Created for the New Year, New Skills Game Jam</p>
                     <div class="project-links">
@@ -38,22 +43,8 @@
                         <a href="assets/pages/mayhem.html">Process</a>
                     </div>
                 </div>
-                <div class="project">
-                    <a href="assets/pages/soap.html"><img src="assets/images/thumbnail_soap.png"></a>
-                    <h3>Soap Swarm</h3>
-                    <small>Game Design and Programming</small>
-                    <p>Endless runner in development by a two-person team</p>
-                    <div class="project-links">
-                        <a style="background-color: grey;">Itch.io</a>
-                        <a href="assets/pages/soap.html">Process</a>
-                    </div>
-                </div>
             </div>
         </main>
-        <footer>
-            <div class="divider"></div>
-            <p>© 2024 Cassandra Carlos. All Rights Reserved.</p>
-        </footer>
         <script>
             function copyToClipboard(text) {
             var input = document.createElement('textarea');
