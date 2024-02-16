@@ -3,86 +3,57 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/styles/main.css">
+        <link rel="stylesheet" href="assets/style.css">
         <title>Cassandra Carlos</title>
-        <style rel="stylesheet" src="assets/styles/main.css"></style>
     </head>
     <body>
         <main>
-            <div class="container">
-                <div class="column-left">
-                    <div class="about-me">
-                        <div class="social">
-                            <div class="social-link">
-                                <img src="assets/logos/instagram/instagram_black.png" alt="Link to my Instagram profile.">
-                                <a href="https://instagram.com/gamecass/" target="_blank">gamecass</a>
-                            </div>
-                            <div class="social-link">
-                                <img src="assets/logos/itch.io/itchio_black.png" alt="Link to my Itch.io profile.">
-                                <a href="https://casscarlos.itch.io/" target="_blank">cassandracarlos</a>
-                            </div>
-                            <div class="social-link">
-                                <img src="assets/logos/linkedin/linkedin.png" alt="Link to my LinkedIn profile.">
-                                <a href="https://www.linkedin.com/in/cassandracarlos/" target="_blank">cassandracarlos</a>
-                            </div>
-                        </div>
-                        <div class="bio">
-                            <p>Hi, I'm Cassandra!</p>
-                            <p>I'm an artist and designer who makes video games. My main tools are Godot and <a href="https://github.com/cassandracarlos" target="_blank">GitHub</a> for game development, Aseprite for pixel art and Figma for design. I also know a bit of coding, namely GDScript, HTML and CSS.</p>
-                            <p id="emailCopy">Right now, I'm reworking my website and social media accounts, but I'll gradually post my work throughout the next month or so. If you'd like to work together or chat, send me an email at <a href="#" onclick="copyToClipboard('cassjunecarlos@gmail.com')">cassjunecarlos@gmail.com</a></p>
-                            <p>Thanks for checking out my website!</p>
-                        </div>
+            <div class="column-left">
+                <div class="social">
+                    <div class="social-link">
+                        <img src="assets/socials/instagram.png" alt="Link to my Instagram profile.">
+                        <a href="https://instagram.com/gamecass/" target="_blank">gamecass</a>
+                    </div>
+                    <div class="social-link">
+                        <img src="assets/socials/itchio.png" alt="Link to my Itch.io profile.">
+                        <a href="https://casscarlos.itch.io/" target="_blank">cassandracarlos</a>
+                    </div>
+                    <div class="social-link">
+                        <img src="assets/socials/linkedin.png" alt="Link to my LinkedIn profile.">
+                        <a href="https://www.linkedin.com/in/cassandracarlos/" target="_blank">cassandracarlos</a>
                     </div>
                 </div>
-                <div class="column-right">
-                    <div class="project">
-                        <a href="https://maib.itch.io/montymayhem" target="_blank"><img src="assets/images/Frame 11.png"></a>
-                        <h3>Monty Mayhem</h3>
-                        <small>UX/UI and Programming</small>
-                        <p>Created for the New Year, New Skills Game Jam</p>
-                        <div class="project-links">
-                            <a href="https://maib.itch.io/montymayhem" target="_blank">Itch.io</a>
-                            <a href="assets/pages/mayhem.html">Process</a>
-                        </div>
+                <div class="about">
+                    <p id="emailcopy">Hi, I'm Cassandra!<br>I'm an artist and designer who makes video games. My main tools are Godot and <a href="https://github.com/cassandracarlos" target="_blank">GitHub</a> for game development, Aseprite for pixel art and Figma for design. I also know a bit of coding, namely GDScript, HTML and CSS.<br> Right now, I'm reworking my website and social media accounts, but I'll gradually post my work throughout the next month or so. If you'd like to work together or chat, send me an email at <a href="#" onclick="copyToClipboard('cassjunecarlos@gmail.com')">cassjunecarlos@gmail.com</a><br>Thanks for checking out my website!</p>
+                </div>
+            </div>
+            <div class="column-right">
+                <div class="project">
+                    <a href="https://maib.itch.io/montymayhem" target="_blank"><img src="assets/images/thumbnail_monty.png"></a>
+                    <h3>Monty Mayhem</h3>
+                    <small>UX/UI and Programming</small>
+                    <p>Created for the New Year, New Skills Game Jam</p>
+                    <div class="project-links">
+                        <a href="https://maib.itch.io/montymayhem" target="_blank">Itch.io</a>
+                        <a href="assets/pages/mayhem.html">Process</a>
                     </div>
-                    <!--<div class="project">
-                        <a href="assets/pages/project_2.html"><img src="assets/images/index_banner.png"></a>
-                        <h3>Garden Street</h3>
-                        <small>Pixel Art</small>
-                        <p>Prototype asset pack for a cozy urban setting</p>
-                        <div class="project-links">
-                            <a style="background-color: grey;">Itch.io</a>
-                            <a href="assets/pages/project_2.html">Process</a>
-                        </div>
-                    </div>-->
-                    <div class="project">
-                        <a href="assets/pages/soap.html"><img src="assets/images/Frame 14.png"></a>
-                        <h3>Soap Swarm</h3>
-                        <small>Game Design and Programming</small>
-                        <p>Endless runner in development by a two-person team</p>
-                        <div class="project-links">
-                            <a style="background-color: grey;">Itch.io</a>
-                            <a href="assets/pages/soap.html">Process</a>
-                        </div>
+                </div>
+                <div class="project">
+                    <a href="assets/pages/soap.html"><img src="assets/images/thumbnail_soap.png"></a>
+                    <h3>Soap Swarm</h3>
+                    <small>Game Design and Programming</small>
+                    <p>Endless runner in development by a two-person team</p>
+                    <div class="project-links">
+                        <a style="background-color: grey;">Itch.io</a>
+                        <a href="assets/pages/soap.html">Process</a>
                     </div>
                 </div>
             </div>
-            <!--
-            <footer>
-                <form action="https://formsubmit.co/cassjunecarlos@gmail.com" method="POST">
-                    <h3>Contact</h3>
-                    <p>Use this form to send me an email.</p>
-                    <input id="name" for="name" name="yourName" placeholder="Your Name" required>
-                    <input id="email" type="email" name="yourEmail" placeholder="Your Email"required>
-                    <textarea rows="4" name="message" placeholder="Your Message"></textarea>
-                    <button type="submit">Send</button>
-                </form>
-            </footer>-->
         </main>
-        <div class="divider"></div>
-        <div class="copyright">
+        <footer>
+            <div class="divider"></div>
             <p>© 2024 Cassandra Carlos. All Rights Reserved.</p>
-        </div>
+        </footer>
         <script>
             function copyToClipboard(text) {
             var input = document.createElement('textarea');
