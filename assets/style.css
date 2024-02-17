@@ -7,10 +7,6 @@ body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     flex-direction: column;
 }
-header {
-    margin: 5px auto;
-    max-width: 1000px;
-}
 small {
     color: grey;
     font-size: 90%;
@@ -18,7 +14,7 @@ small {
 main {
     display: flex;
     max-width: 1000px;
-    margin: 40px auto 40px;
+    margin: 30px auto;
 }
 .column-left {
     flex: 65%;
@@ -66,7 +62,7 @@ main {
 }
 .sticky-content {
     position: sticky;
-    top: 25px;
+    top: 30px;
 }
 .about p {
     font-size: 1.15rem;
