@@ -58,6 +58,9 @@ main {
         flex-direction: column;
         margin: 25px;
     }
+    footer {
+        padding-left: 25px;
+    }
     .column-left {
         padding-right: 0px;
         padding-bottom: 25px;
@@ -117,4 +120,15 @@ a:hover {
 }
 .project-links a:hover {
     background: rgb(185, 185, 255);
+}
+.line {
+    height: 1px;
+    background-color: grey;
+}
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+footer small {
+    line-height: 2rem;
 }
