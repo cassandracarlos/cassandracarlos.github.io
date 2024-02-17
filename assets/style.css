@@ -1,37 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    font-family: 'Merriweather Sans', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     flex-direction: column;
+}
+header {
+    margin: 25px auto 0;
+    max-width: 1000px;
+}
+small {
+    color: grey;
+    font-size: 90%;
+}
+header img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
 }
 main {
     display: flex;
     max-width: 1000px;
-    margin: 25px auto 50px;
-}
-small {
-    color: #555555;
-    font-size: 0.9rem;
+    margin: 40px auto 40px;
 }
 .column-left {
-    flex: 55%;
-    padding-right: 50px;
+    flex: 65%;
+    margin-right: 50px;
+    /*border: 1px solid black;*/
 }
 .column-right {
-    flex: 45%;
+    flex: 35%;
+    /*border: 1px solid black;*/
+}
+.social-link {
+    font-size: 1.10rem;
+    margin-bottom: 10px;
 }
 .social-link img {
-    height: 24px;
+    height: 32px;
     width: auto;
+    margin-right: 5px;
     vertical-align: middle;
+}
+.social-link a {
+    text-decoration: none;
 }
 .ss {
     margin-bottom: 25px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 960px) {
+    header {
+        display: none
+    }
     main {
         flex-direction: column;
         margin: 25px;
@@ -40,49 +62,47 @@ small {
         padding-right: 0px;
         padding-bottom: 25px;
     }
-    .column-right {
-        flex-direction: row;
-    }
-    .ss {
-        flex: 50%;
-    }
-    .mm {
-        flex: 50%;
-    }
 }
 .sticky-content {
     position: sticky;
-    top: 25px;
+    top: 40px;
 }
-.about, .social-link {
+.about p {
     font-size: 1.10rem;
     line-height: 1.75rem;
 }
-.about p, .social-link {
+.about h2 {
+    line-height: 1.75rem;
+}
+/*.project a {
+    text-decoration: none;
+}*/
+.about p, .about h2 {
     margin-bottom: 25px;
 }
-.about a {
+a {
     color: rgb(17, 43, 149);
 }
-.about a:hover {
+a:hover {
     color: rgb(87, 123, 255);
 }
+.project a:hover {
+    filter: brightness(95%);
+    transition: .095s;
+}
 .project p {
-    margin-top: 10px;
+    margin: 5px 0 0;
     font-size: 1.05rem;
 }
 .project h2 {
     font-size: 1.35rem;
+    margin-bottom: 5px;
 }
 .project img {
     border-radius: 10px;
     width: 100%;
     height: 100%;
     margin-bottom: 15px;
-}
-.project a img:hover {
-    filter: brightness(85%);
-    transition: .095s;
 }
 .ss .project-links {
     margin-bottom: 25px;
@@ -95,7 +115,7 @@ small {
     border: 1px solid black;
     padding: 10px 15px;
     border-radius: 5px;
-    text-decoration: none;
+    /*text-decoration: none;*/
     color: black;
 }
 .project-links a:hover {
