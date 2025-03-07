@@ -1,9 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     flex-direction: column;
+    text-align: center;
+    margin: 5% 15%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+li {
+    width: 50%;
+    margin: 0 .5%;
+}
+
+header, main, footer {
+    border: 1px solid #999;
+    margin: 2.5%;
+}
+
+section {
+    margin: 2.5%;
 }
