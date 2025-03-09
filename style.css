@@ -7,31 +7,26 @@
 
 body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    flex-direction: column;
-    text-align: center;
     margin: 5% 15%;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-
 img {
-    width: 100%;
-}
-
-li {
-    width: 50%;
-    margin: 0 .5%;
-}
-
-header, main, footer {
-    border: 1px solid #999;
-    margin: 2.5%;
+    width: 70%;
 }
 
 section {
-    margin: 2.5%;
+    margin: 2% 0;
+}
+
+article {
+    padding: 50px 0;
+}
+
+.work {
+    align-items: right;
+    width: 50%;
+}
+
+ul {
+    list-style-type: none;
 }
