@@ -1,0 +1,62 @@
+<html>
+<head>
+  <style>
+    .projects {
+  display: flex;
+  gap: 20px; /* Adds some spacing between the two projects */
+}
+
+.project {
+  flex: 1; /* Ensures each project takes up 50% of the available width */
+  text-align: center; /* Centers content for a polished look */
+}
+
+.project img {
+  width: 100%; /* Ensures the thumbnail image fits within its container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Optional: Adds rounded corners to the thumbnail */
+  margin-bottom: 10px; /* Space between the image and title */
+}
+
+.project h3 {
+  font-size: 1.5em;
+  margin: 10px 0; /* Space above and below the title */
+}
+
+.project p {
+  font-size: 1em;
+  margin-bottom: 15px; /* Space below the description */
+}
+
+.project a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #007acc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project a:hover {
+  background-color: #005f99; /* A darker shade for hover effect */
+}
+
+  </style>
+</head>
+<body>
+  <div class="projects">
+    <div class="project">
+      <img src="path-to-pixel-art-thumbnail.jpg" alt="Pixel Art Asset Pack Thumbnail">
+      <h3>Pixel Art Asset Pack</h3>
+      <p>An in-progress collection of charming pixel art assets for games and other digital projects.</p>
+      <a href="link-to-pixel-art-project" target="_blank">View More</a>
+    </div>
+    <div class="project">
+      <img src="path-to-web-design-thumbnail.jpg" alt="Web Design Project Thumbnail">
+      <h3>Web Design Project</h3>
+      <p>Creative mock web pages inspired by fictional characters and organizations.</p>
+      <a href="link-to-web-design-project" target="_blank">View More</a>
+    </div>
+</body>
+</html>
