@@ -9,7 +9,14 @@ body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #1e1e1e;
-    color: #e0e0e0
+    color: #e0e0e0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
 }
 
 img {
