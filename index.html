@@ -1,71 +1,271 @@
+<!--
+Revisions for 2025-03-14:
+* sticky nav bar
+* nav bar becomes narrow when scrolled
+* links in nav bar turn (yellow?) when hovered
+Additions for 2025-03-14:
+* dress up the hero section with a transparent graphic
+* remove the padding(/margin?) between the project images and section borders
+* curate work for presentation and take note of missing work (to-do ASAP)
+Push presentable non-plagiarized work to the GitHub Pages repository
+-->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Cassandra Carlos</title>
-    </head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QXRQ44LMFF"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-QXRQ44LMFF');
-    </script>
-    <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Lato', Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #262626;
+      color: #c6c6c6;
+    }
 
-        <header>
-            <div class="name">
-                <h1>Cassandra Carlos</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li>Work</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-        <main>
-            <!-- TOILIN' TROUBLE -->
-            <div class="project">
-                <img src="images/toilin_trouble.png">
-                <h3>Toilin' Trouble</h3>
-                <p>In-development game about a witch and her little potion shop. Began as an entry to the Global Game Jam 2025.</p>
-                <a href="https://ramen-start-studios.itch.io/toilin-trouble" target="_blank">Play the Game Jam Version on Itch.io!</a>
-            </div>
-            <!-- CAMPY CAMP-->
-            <div class="project">
-                <img src="images/cabin-1.png">
-                <h3>Campy Camp</h3>
-                <p>Working title for an in-development pixel art asset pack. I'm publishing it under my alias, Gumbot.</p>
-                <a href="https://gumbot.itch.io/camp" target="_blank">Check out the asset pack on Itch.io!</a>
-            </div>
-            <!-- FICTION WEBSITES-->
-            <div class="project">
-                <img src="images/store-1.png">
-                <h3>Fiction Websites</h3>
-                <p>A series of web pages based on fictional characters (basically, "what kind of website would [character/organization] have?"). The Krusty Krab, Planet Express and more. Created using HTML, CSS and JavaScript, includes process and logo/image credits.</p>
-                <a href="https://github.com/cassandracarlos" target="_blank">See the full list!</a>
-            </div>
-        </main>
+    /* Navigation Bar */
+    header {
+      background-color: #3a3a3a;
+      color: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-        <footer>
-            <div class="about">
-                <h2>About Me</h2>
-                <p>Coming soon!</p>
-            </div>
-            <div class="contact">
-                <h2>Contact</h2>
-                <a href="mailto:cassjunecarlos@gmail.com">Send me an email</a>
-            </div>
-            <div class="copyright">
-                <p>© Cassandra Carlos 2025</p>
-            </div>
-        </footer>
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
 
-    </body>
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4cafef;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      padding: 10px 15px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #4cafef;
+      border-radius: 5px;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 0;
+      background-color: #333333;
+      color: #ffffff;
+    }
+
+    .hero-text {
+      max-width: 50%;
+      text-align: left;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #4cafef;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .hero-graphic {
+      max-width: 50%;
+      text-align: center;
+    }
+
+    .hero-graphic img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Projects Section */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: #3a3a3a;
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s;
+      padding: 20px;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .project h3 {
+      margin: 15px 0;
+      font-size: 1.25rem;
+      color: #ffffff;
+    }
+
+    .project p {
+      font-size: 0.9rem;
+      color: #c6c6c6;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #4cafef;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .project a:hover {
+      background-color: #007acc;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #3a3a3a;
+      color: #ffffff;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #4cafef;
+      margin-bottom: 20px;
+    }
+
+    #process, #tools, #about, #contact {
+      background-color: #2e2e2e;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo">Cassandra</a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Cassandra</h1>
+        <p>Web Designer & Artist</p>
+      </div>
+      <div class="hero-graphic">
+        <img src="path-to-graphic.png" alt="Hero Graphic">
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="work" class="projects">
+      <div class="project">
+        <img src="img1.png" alt="Game Project Thumbnail">
+        <h3>Game Project</h3>
+        <p>An immersive game experience I've designed and built.</p>
+        <a href="link-to-game-project" target="_blank">View More</a>
+      </div>
+      <div class="project">
+        <img src="img2.png" alt="Pixel Art Pack Thumbnail">
+        <h3>Pixel Art Pack</h3>
+        <p>A charming collection of pixel art assets for digital creations.</p>
+        <a href="link-to-pixel-art-project" target="_blank">View More</a>
+      </div>
+      <div class="project">
+        <img src="img3.png" alt="Web Design Thumbnail">
+        <h3>Web Design Project</h3>
+        <p>Creative web pages inspired by fictional characters and organizations.</p>
+        <a href="link-to-web-design-project" target="_blank">View More</a>
+      </div>
+    </section>
+
+    <!-- Placeholder Sections -->
+    <section id="process">
+      <h2>Process</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    </section>
+    <section id="tools">
+      <h2>Tools</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Cassandra. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
