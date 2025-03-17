@@ -12,7 +12,6 @@
       padding: 0;
     }
     header, main, footer {
-      border: 1px dotted #ccc;
       max-width: 1000px;
       margin: 0 auto;
     }
@@ -80,9 +79,9 @@
       overflow: hidden;
       transition: transform 0.3s;
     }
-    .project:hover {
+    /*.project:hover {
       transform: translateY(-5px);
-    }
+    }*/
     .project img {
       max-width: 100%;
       height: auto;
@@ -98,7 +97,6 @@
       text-decoration: none;
       color: white;
       background-color: #007acc;
-      border-radius: 5px;
       transition: background-color 0.3s;
     }
     .project a:hover {
@@ -106,9 +104,8 @@
     }
 
     /* ABOUT SECTION */
-    #about {
-      background-color: #ffffff;
-      padding: 40px 20px;
+    #about, #posts, #contact, #work {
+      padding: 0 20px;
     }
     #about h2 {
       font-size: 2rem;
@@ -131,7 +128,6 @@
     .about-image img {
       width: 100%;
       height: auto;
-      border-radius: 10px; /* Rounded corners for a polished look */
     }
     .about-text {
       flex: 2; /* Makes the text section larger than the image */
@@ -165,23 +161,21 @@
     .contact-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
-      gap: 20px; /* Adds space between columns */
+      gap: 10px; /* Adds space between columns */
     }
     .contact-item {
       background: #f9f9f9;
-      padding: 20px;
       text-align: center; /* Center-aligns the content */
-      border-radius: 5px; /* Adds subtle rounding */
     }
     .contact-item h3 {
       font-size: 1.2rem;
       color: #007acc;
-      margin-bottom: 10px;
+      margin-bottom: 0;
     }
     .contact-item p {
       font-size: 1rem;
       color: #333;
-      margin: 5px 0;
+      margin-bottom: 25px;
     }
     .contact-item a {
       text-decoration: none;
@@ -200,25 +194,43 @@
         grid-template-columns: 1fr; /* 1 column on very small screens */
       }
     }
+    .posts-container {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents wrapping to a new line */
+  gap: 20px; /* Adds space between the video player and list */
+  align-items: flex-start; /* Aligns items to the top */
+}
+
+.video-player {
+  flex: 0 0 65%; /* Fixed size at 65% of the parent width */
+  aspect-ratio: 16 / 9; /* Maintains video aspect ratio */
+  border: 1px solid #ddd;
+}
+
+.video-list {
+  flex: 0 0 35%; /* Fixed size at 35% of the parent width */
+  overflow-y: auto; /* Adds scrolling */
+  max-height: 400px; /* Prevents the list from taking too much height */
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box; /* Ensures padding doesn’t break the layout */
+}
 
     /* Footer Section */
     footer {
       background-color: #ffffff; /* White background */
       color: #333;
       text-align: center;
-      border: 1px dotted #ccc; /* Light grey dotted line for footer */
     }
 
     /* Section Styling */
     section {
       background-color: #ffffff; /* White background for all sections */
-      border: 1px dotted #ccc; /* Light grey dotted borders for sections */
     }
 
     section h2 {
       font-size: 2rem;
       color: #007acc;
-      margin-bottom: 20px;
       text-align: left; /* Left-aligned section headers */
     }
 
@@ -241,7 +253,8 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#work">Work</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#posts">Videos</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -272,8 +285,39 @@
         </div>
       </div>
     </section>
+    <section id="posts">
+      <h2>Posts</h2>
+      <div class="posts-container">
+        <!-- Video Player -->
+        <div class="video-player">
+          <iframe 
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+    
+        <!-- Video List with Thumbnails -->
+        <div class="video-list">
+          <div class="video-item">
+            <img src="https://img.youtube.com/vi/VIDEO1_ID/hqdefault.jpg" alt="Video Thumbnail">
+            <a href="https://www.youtube.com/watch?v=VIDEO1_ID" target="_blank">Recent Video 1</a>
+          </div>
+          <div class="video-item">
+            <img src="https://img.youtube.com/vi/VIDEO2_ID/hqdefault.jpg" alt="Video Thumbnail">
+            <a href="https://www.youtube.com/watch?v=VIDEO2_ID" target="_blank">Recent Video 2</a>
+          </div>
+          <div class="video-item">
+            <img src="https://img.youtube.com/vi/VIDEO3_ID/hqdefault.jpg" alt="Video Thumbnail">
+            <a href="https://www.youtube.com/watch?v=VIDEO3_ID" target="_blank">Recent Video 3</a>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="about">
-      <h2>About Me</h2>
+      <h2>About</h2>
       <div class="about-container">
         <div class="about-image">
           <img src="portrait.png" />
@@ -301,7 +345,6 @@
         <div class="contact-item">
           <h3>Social</h3>
           <p><a href="https://www.linkedin.com/in/example" target="_blank">LinkedIn</a></p>
-          <p><a href="https://twitter.com/example" target="_blank">Twitter</a></p>
         </div>
       </div>
     </section>
@@ -311,6 +354,7 @@
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 by Cassandra Carlos</p>
+    <p>Website by me, I made it</p>
   </footer>
 </body>
 </html>
