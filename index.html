@@ -1,360 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Lato', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header, main, footer {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    /* HEADER (NAV BAR) */
-    header {
-      color: #333;
-      background-color: #fff; /* opaque white  background */
-      position: sticky; /* Sticks to top of page */
-      top: 0;
-    }
-    header nav {
-      z-index: 1000;
-      width: 100%;
-      padding: 10px 0;
-    }
-    header ul {
-      display: flex;
-      list-style-type: none;
-      justify-content: center; /* Centers the links */
-      margin: 0;
-      padding: 0;
-    }
-    header li {
-      margin: 0 15px; /* Space between links */
-    }
-    header a {
-      text-decoration: none; /* Removes underline */
-      color: #007acc; /* Blue text color for links */
-      font-size: 1rem; /* Standard font size */
-      font-weight: 700; /* Bold for emphasis */
-      transition: color 0.3s; /* Smooth hover effect */
-    }
-    header a:hover {
-      color: #005f99; /* Darker blue on hover */
-    }
-
-    /* HERO SECTION */
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .hero-text {
-      max-width: 50%;
-      text-align: left;
-    }
-    .hero-graphic {
-      max-width: 60%;
-      text-align: center;
-    }
-    .hero img {
-      width: 100%;
-      height: auto;
-    }
-
-    /* WORK SECTION */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-    .project {
-      background: #fff;
-      text-align: center;
-      overflow: hidden;
-      transition: transform 0.3s;
-    }
-    /*.project:hover {
-      transform: translateY(-5px);
-    }*/
-    .project img {
-      max-width: 100%;
-      height: auto;
-    }
-    .project p {
-      font-size: 0.9rem;
-      color: #555;
-    }
-    .project a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      text-decoration: none;
-      color: white;
-      background-color: #007acc;
-      transition: background-color 0.3s;
-    }
-    .project a:hover {
-      background-color: #005f99;
-    }
-
-    /* ABOUT SECTION */
-    #about, #posts, #contact, #work {
-      padding: 0 20px;
-    }
-    #about h2 {
-      font-size: 2rem;
-      color: #007acc;
-      margin-bottom: 20px;
-      text-align: left; /* Left-align the header */
-    }
-    .about-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
-    }
-    .about-image {
-      flex: 1; /* Makes the image take up equal space */
-      max-width: 300px; /* Set a maximum width for the portrait */
-      text-align: center; /* Center the image for aesthetics */
-    }
-    .about-image img {
-      width: 100%;
-      height: auto;
-    }
-    .about-text {
-      flex: 2; /* Makes the text section larger than the image */
-    }
-    .about-text p {
-      font-size: 1.2rem;
-      color: #333;
-      line-height: 1.6;
-    }
-    /* Responsive Design for Smaller Screens */
-    @media (max-width: 768px) {
-      .about-container {
-        flex-direction: column; /* Stack image and text vertically */
-        text-align: center; /* Center-align everything */
-      }
-      .about-text {
-        margin-top: 20px; /* Add spacing between the image and text */
-      }
-    }
-
-    /* CONTACT SECTION */
-    #contact {
-      padding: 40px 20px;
-    }
-    #contact h2 {
-      font-size: 2rem;
-      color: #007acc;
-      margin-bottom: 20px;
-      text-align: left; /* Align header to the left */
-    }
-    .contact-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
-      gap: 10px; /* Adds space between columns */
-    }
-    .contact-item {
-      background: #f9f9f9;
-      text-align: center; /* Center-aligns the content */
-    }
-    .contact-item h3 {
-      font-size: 1.2rem;
-      color: #007acc;
-      margin-bottom: 0;
-    }
-    .contact-item p {
-      font-size: 1rem;
-      color: #333;
-      margin-bottom: 25px;
-    }
-    .contact-item a {
-      text-decoration: none;
-      color: #007acc;
-    }
-    .contact-item a:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 768px) {
-      .contact-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
-      }
-    }
-    @media (max-width: 480px) {
-      .contact-container {
-        grid-template-columns: 1fr; /* 1 column on very small screens */
-      }
-    }
-    .posts-container {
-  display: flex;
-  flex-wrap: nowrap; /* Prevents wrapping to a new line */
-  gap: 20px; /* Adds space between the video player and list */
-  align-items: flex-start; /* Aligns items to the top */
-}
-
-.video-player {
-  flex: 0 0 65%; /* Fixed size at 65% of the parent width */
-  aspect-ratio: 16 / 9; /* Maintains video aspect ratio */
-  border: 1px solid #ddd;
-}
-
-.video-list {
-  flex: 0 0 35%; /* Fixed size at 35% of the parent width */
-  overflow-y: auto; /* Adds scrolling */
-  max-height: 400px; /* Prevents the list from taking too much height */
-  border: 1px solid #ddd;
-  padding: 10px;
-  box-sizing: border-box; /* Ensures padding doesn’t break the layout */
-}
-
-    /* Footer Section */
-    footer {
-      background-color: #ffffff; /* White background */
-      color: #333;
-      text-align: center;
-    }
-
-    /* Section Styling */
-    section {
-      background-color: #ffffff; /* White background for all sections */
-    }
-
-    section h2 {
-      font-size: 2rem;
-      color: #007acc;
-      text-align: left; /* Left-aligned section headers */
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassandra Carlos Inspired Layout</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>  <!-- Header -->
-
-  <main>
-    <section class="hero">
-      <div class="hero-text">
-        <img src="logo.png" />
-        <p>Making Games and Websites</p>
-      </div>
-      <div class="hero-graphic">
-        <img src="img1.png" alt="Hero Graphic">
-      </div>
-    </section>
-  </main>
-  
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#work">Projects</a></li>
-        <li><a href="#posts">Videos</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Main Content -->
-  <main>
-    <section id="work">
-      <div class="projects">
-        <div class="project">
-          <img src="img1.png" alt="Game Project Thumbnail">
-          <h3>Game Project</h3>
-          <p>An immersive game experience I've designed and built.</p>
-          <a href="link-to-game-project" target="_blank">View More</a>
+<body>
+<div class="wrapper">
+    <header class="layout header">
+        <img src="profile.png" alt="Cassandra Carlos">
+        <div class="info">
+            <h1>Cassandra Carlos</h1>
+            <p>Lorem ipsum yada yada yada.</p>
+            <nav>
+                <button class="hamburger" aria-label="menu">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About + Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="project">
-          <img src="img2.png" alt="Pixel Art Pack Thumbnail">
-          <h3>Pixel Art Pack</h3>
-          <p>A charming collection of pixel art assets for digital creations.</p>
-          <a href="link-to-pixel-art-project" target="_blank">View More</a>
+    </header>
+    <main class="layout main">
+        <div class="grid">
+            <div class="grid-item">
+                <a href="#">
+                    <img src="thumbnail1.jpg" alt="Thumbnail 1">
+                    <div class="hover-text">Text for Image 1</div>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="thumbnail2.jpg" alt="Thumbnail 2">
+                    <div class="hover-text">Text for Image 2</div>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="thumbnail1.jpg" alt="Thumbnail 3">
+                    <div class="hover-text">Text for Image 1</div>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="thumbnail2.jpg" alt="Thumbnail 4">
+                    <div class="hover-text">Text for Image 2</div>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="#">
+                    <img src="thumbnail2.jpg" alt="Thumbnail 5">
+                    <div class="hover-text">Text for Image 2</div>
+                </a>
+            </div>
         </div>
-        <div class="project">
-          <img src="img3.png" alt="Web Design Thumbnail">
-          <h3>Web Design Project</h3>
-          <p>Creative web pages inspired by fictional characters and organizations.</p>
-          <a href="link-to-web-design-project" target="_blank">View More</a>
+        <img src="profile.png" alt="Cassandra Carlos">
+        <div class="about">
+            <h1>Cassandra Carlos</h1>
+            <p>Sometimes, when I'm in the right mood, I make video games and art. Or something.</p>
+            <nav>
+                <button class="hamburger" aria-label="menu">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About + Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-    </section>
-    <section id="posts">
-      <h2>Posts</h2>
-      <div class="posts-container">
-        <!-- Video Player -->
-        <div class="video-player">
-          <iframe 
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
+    </main>
+    <footer class="layout footer">
+        <div class="copyright">
+            <div class="divider">
+                <p>&copy; Cassandra Carlos 2025</p>
+            </div>
         </div>
-    
-        <!-- Video List with Thumbnails -->
-        <div class="video-list">
-          <div class="video-item">
-            <img src="https://img.youtube.com/vi/VIDEO1_ID/hqdefault.jpg" alt="Video Thumbnail">
-            <a href="https://www.youtube.com/watch?v=VIDEO1_ID" target="_blank">Recent Video 1</a>
-          </div>
-          <div class="video-item">
-            <img src="https://img.youtube.com/vi/VIDEO2_ID/hqdefault.jpg" alt="Video Thumbnail">
-            <a href="https://www.youtube.com/watch?v=VIDEO2_ID" target="_blank">Recent Video 2</a>
-          </div>
-          <div class="video-item">
-            <img src="https://img.youtube.com/vi/VIDEO3_ID/hqdefault.jpg" alt="Video Thumbnail">
-            <a href="https://www.youtube.com/watch?v=VIDEO3_ID" target="_blank">Recent Video 3</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <h2>About</h2>
-      <div class="about-container">
-        <div class="about-image">
-          <img src="portrait.png" />
-        </div>
-        <div class="about-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact-container">
-        <div class="contact-item">
-          <h3>Email</h3>
-          <p><a href="mailto:example@example.com">example@example.com</a></p>
-        </div>
-        <div class="contact-item">
-          <h3>Phone</h3>
-          <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
-        </div>
-        <div class="contact-item">
-          <h3>Location</h3>
-          <p>Burnaby, BC, Canada</p>
-        </div>
-        <div class="contact-item">
-          <h3>Social</h3>
-          <p><a href="https://www.linkedin.com/in/example" target="_blank">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 by Cassandra Carlos</p>
-    <p>Website by me, I made it</p>
-  </footer>
+    </footer>
+</div>
 </body>
 </html>
