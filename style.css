@@ -16,6 +16,14 @@ body {
      width: 100%;
 }
 
+h2 {
+     color: #f1f1f1;
+}
+
+p {
+     color: #f1f1f1;
+}
+
 header {
      display: flex;
      padding: 40px 20px;
@@ -136,4 +144,8 @@ footer a {
     font-weight: bold;
     color: #003bdc;
     text-decoration: underline; /* Add underline on hover */
+}
+
+img {
+     width: 100%;
 }
