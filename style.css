@@ -1,127 +1,151 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap');
 
 body {
-     font-family: 'Lato', Arial, sans-serif;
-     margin: 0;
-     padding: 0;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     background-color: #0a0a0a;
-     color: #ececec;
+    font-family: 'Lato', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0a0a0a;
+    color: #ececec;
+    min-height: 100vh;
 }
 
 .wrapper {
-     max-width: 960px;
+    max-width: 960px;
+    width: 100%;
+    padding: 20px;
 }
 
 header {
-     display: flex;
-     padding: 40px 20px;
-     align-items: center;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 header img {
-     width: 172px;
-     height: auto;
-     border-radius: 50%;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px 0;
 }
 
 header .header-text {
-     flex: 1;
-     padding-left: 30px;
+    flex: 1;
+    padding-left: 20px;
+    text-align: left;
 }
 
 header h1 {
-     margin: 0;
-     color: rgb(17, 255, 81);
-     font-weight: 600;
-     line-height: 42px;
-     font-size: 2.75rem;
+    margin: 0;
+    color: rgb(17, 255, 81);
+    font-weight: 600;
+    line-height: 42px;
+    font-size: 2rem;
 }
 
 @media (max-width: 768px) {
-     header {
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-     }
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-     header img {
-          margin-bottom: 10px;
-          display: flex;
-     }
+    header .header-text {
+        padding-left: 0;
+        text-align: center;
+    }
 }
 
 .work {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
 }
 
 .work article {
-     position: relative;
-     aspect-ratio: 16 / 9;
-     background-color: #ccc;
-     overflow: hidden;
-}
-
-.work a {
-     display: block;
-     width: 100%;
-     height: 100%;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background-color: #ccc;
+    overflow: hidden;
 }
 
 .work img {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .work {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
 }
 
 .hover-text {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: rgba(0, 0, 0, 0.6);
-     color: #fff;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     opacity: 0;
-     transition: opacity 0.25s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s ease;
 }
 
 .work article:hover .hover-text {
-     opacity: 1;
+    opacity: 1;
 }
 
 .info {
-     display: flex;
-     padding: 40px 0;
-     align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .info {
+        padding: 0 15px;
+    }
 }
 
 .info p {
-     margin: 10px 0 15px;
-     font-size: 1.25rem;
-     font-weight: 600;
-     color: #f1f1f1;
+    margin: 2.5px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f1f1f1;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
 }
 
 footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center; /* Vertically center items */
-    gap: 20px; /* Space between columns */
-    padding-bottom: 40px; /* Padding inside the footer */
+    text-align: center;
+    margin: 20px 0;
 }
 
 footer a {
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none;
     font-weight: bold;
     color: #003bdc;
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline;
 }
