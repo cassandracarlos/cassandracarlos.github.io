@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap');
 
-body {
-    font-family: 'Lato', Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
     color: #ececec;
     background-color: #0a0a0a;
 }
 
 .wrapper {
-    max-width: 960px;
+    max-width: 800px;
+    /*padding: 40px 0;*/
+    padding: 40px 0 0 0;
+    margin: 0 auto;
 }
 
 header {
@@ -21,40 +24,61 @@ header {
     align-items: center;
 }
 
-header img {
+.header-left img {
     width: 150px;
-    height: auto;
     border-radius: 50%;
 }
 
-header .header-text {
+.header-right {
     flex: 1;
-    text-align: left;
+    padding-left: 40px;
 }
 
-header .header-text h1 {
-    margin: 0;
+.header-right h1 {
+    font-size: 2.25rem;
+    line-height: 4rem;
     color: rgb(90, 29, 255);
 }
+/*
+.header-right p {
+    font-size: 1.1rem;
+}*/
 
-header .header-text p {
-    font-size: 1.15rem;
+.links {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-main .work {
+.links a {
+    display: inline-block;
+}
+
+.links img {
+    width: 32px;
+    height: auto;
+    opacity: 0.6;
+    transition: opacity 0.05s ease;
+}
+
+.links img:hover {
+    opacity: 1;
+}
+
+.work {
+    margin: 30px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
-main .work article {
+.work a {
     position: relative;
     aspect-ratio: 16 / 9;
-    background-color: #ccc;
     overflow: hidden;
 }
 
-main .work img {
+.work img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -62,97 +86,77 @@ main .work img {
 
 .hover-text {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     display: flex;
     justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 600;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.25s ease;
+    transition: opacity 0.15s ease;
 }
 
-.work article:hover .hover-text {
+.work a:hover .hover-text {
     opacity: 1;
 }
-
-.info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px 0;
-}
-
-.info p {
-    margin: 2.5px 0;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #f1f1f1;
-}
-
-.social-media {
-    display: flex;
-    gap: 10px;
-    justify-content: start;
-    align-items: center;
-}
-
-.social-media img {
-    width: 24px;
-    height: 24px;
-}
-
+/*
 footer {
     text-align: center;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 footer a {
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: bold;
     color: #003bdc;
-    text-decoration: underline;
-}
+}*/
 
-.alt img {
-     width: 80px;
-     border-radius: 50%;
-     margin: 20px 0;
-}
-
-.feature img {
-     width: 100%;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     header {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 0 30px;
     }
 
-    header .header-text {
+    .header-right {
         padding-left: 0;
-        text-align: center;
     }
 
-    header h1 {
-        line-height: 42px;
+    .header-right h1 {
+        margin: 10px 0;
     }
-}
 
-@media (max-width: 768px) {
+    .header-right p {
+        font-size: 1.1rem;
+        line-height: 24px;
+    }
+
+    .links {
+        justify-content: center; /* Center social media links */
+    }
+
     .work {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column on mobile */
         gap: 0;
     }
+
+    .work a {
+        display: flex;
+        justify-content: center;
+    }
 }
 
-@media (max-width: 768px) {
-    .info {
-        padding: 0 15px;
-    }
+.back-link {
+    display: block;
+    margin-top: 30px;
+    color: #003bdc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
 }
