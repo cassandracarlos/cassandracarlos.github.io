@@ -6,94 +6,58 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    background-color: #0a0a0a;
+    align-items: center;
     color: #ececec;
-    min-height: 100vh;
+    background-color: #0a0a0a;
 }
 
 .wrapper {
     max-width: 960px;
-    width: 100%;
-    padding: 20px;
 }
 
 header {
     display: flex;
-    padding: 20px;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-header p {
-    font-size: 1.15rem;
-    font-weight: 500;
 }
 
 header img {
     width: 150px;
     height: auto;
     border-radius: 50%;
-    margin: 10px 0;
 }
 
 header .header-text {
     flex: 1;
-    padding-left: 50px;
     text-align: left;
 }
 
-header h1 {
+header .header-text h1 {
     margin: 0;
     color: rgb(90, 29, 255);
-    font-weight: 600;
-    line-height: 15px;
-    font-size: 2rem;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    header .header-text {
-        padding-left: 0;
-        text-align: center;
-    }
-
-    header h1 {
-        line-height: 42px;
-    }
+header .header-text p {
+    font-size: 1.15rem;
 }
 
-.work {
+main .work {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin: 20px 0;
+    gap: 10px;
 }
 
-.work article {
+main .work article {
     position: relative;
     aspect-ratio: 16 / 9;
     background-color: #ccc;
     overflow: hidden;
 }
 
-.work img {
+main .work img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .work {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
 }
 
 .hover-text {
@@ -120,12 +84,6 @@ header h1 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px 0;
-}
-
-@media (max-width: 768px) {
-    .info {
-        padding: 0 15px;
-    }
 }
 
 .info p {
@@ -167,4 +125,34 @@ footer a {
 
 .feature img {
      width: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .header-text {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    header h1 {
+        line-height: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .work {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        padding: 0 15px;
+    }
 }
