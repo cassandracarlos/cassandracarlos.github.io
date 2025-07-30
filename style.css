@@ -7,6 +7,12 @@ body {
 	font-family: "Inter", sans-serif;
 }
 
+section, header, article, div {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+}
+
 main {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -17,51 +23,30 @@ main {
 .sticky {
 	position: sticky;
 	top: 0;
-	height: 100px; /* Example height */
-	background-color: yellow;
-}
-
-.one {
-	background-color: red;
-}
-
-.two {
-	background-color: blue;
-}
-
-.three {
-	background-color: green;
-	grid-column: span 2;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	background-color: white;
 }
 
 .three-column {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    background-color: #f0f0f0;
+    gap: 10px;
 }
 
 .two-column-uneven {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    background-color: #e0e0e0;
+    gap: 10px;
 }
 
 .unique-layout {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
-    padding: 20px;
-    background-color: #d0d0d0;
 }
 
-.unique-layout > div {
-    background-color: #c0c0c0;
-    padding: 20px;
-    text-align: center;
+.three {
+	grid-column: span 2;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
