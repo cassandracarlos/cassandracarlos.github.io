@@ -1,4 +1,4 @@
-Classic Leather Tote|https://unsplash.com/photos/brown-leather-handbag-on-white-surface-tcVH_BwHtrc|Elegant and spacious, perfect for everyday use.
+Classic Leather Tote|images/classic_leather_tote.jpg|Elegant and spacious, perfect for everyday use.
 
 Canvas Shopper|https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80|Eco-friendly and roomy, great for shopping trips.
 
