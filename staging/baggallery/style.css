@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
     background: #f7f7f7;
     margin: 0;
     padding: 0;
@@ -17,6 +17,14 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
+.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #e0e0e0;
+    margin-top: 0.5rem;
+    letter-spacing: 1px;
+}
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -27,25 +35,35 @@ h1 {
 }
 .bag-card {
     background: #fff;
-    border-radius: 12px;
+    border-radius: 8px; /* reduced */
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: 'Inter', sans-serif;
+}
+.bag-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 .bag-card img {
     width: 220px;
     height: 180px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 8px; /* reduced */
     margin-bottom: 1rem;
 }
 .bag-desc {
     font-size: 1.1rem;
     margin-bottom: 1rem;
     text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+.popup-overlay img {
+    border-radius: 8px; /* slight border radius for pop-up */
 }
 .footer {
     background: linear-gradient(90deg, #222 0%, #444 100%);
@@ -57,6 +75,7 @@ h1 {
     box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
     position: relative;
     width: 100%;
+    font-family: 'Inter', sans-serif;
 }
 .footer-content {
     display: flex;
