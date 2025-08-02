@@ -8,4 +8,4 @@ Sporty Backpack|images/sporty_backpack.jpg|Durable and versatile, suitable for t
 
 Quilted Chain Bag|images/quilted_chain_bag.jpg|Iconic quilted design with gold chain strap.
 
-Messenger Bag|images/messanger_bag.jpg|Practical and stylish, great for work or school.
+Messenger Bag|images/messenger_bag.jpg|Practical and stylish, great for work or school.
