@@ -1,11 +1,11 @@
 Classic Leather Tote|images/classic_leather_tote.jpg|Elegant and spacious, perfect for everyday use.
 
-Canvas Shopper|https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80|Eco-friendly and roomy, great for shopping trips.
+Canvas Shopper|images/canvas_shopper.jpg|Eco-friendly and roomy, great for shopping trips.
 
-Elegant Clutch|https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80|Sleek and refined, perfect for formal occasions.
+Elegant Clutch|images/elegant_clutch.jpg|Sleek and refined, perfect for formal occasions.
 
-Sporty Backpack|https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=400&q=80|Durable and versatile, suitable for travel and adventure.
+Sporty Backpack|images/sporty_backpack.jpg|Durable and versatile, suitable for travel and adventure.
 
-Quilted Chain Bag|https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80|Iconic quilted design with gold chain strap.
+Quilted Chain Bag|images/quilted_chain_bag.jpg|Iconic quilted design with gold chain strap.
 
-Messenger Bag|https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80|Practical and stylish, great for work or school.
+Messenger Bag|images/messanger_bag.jpg|Practical and stylish, great for work or school.
