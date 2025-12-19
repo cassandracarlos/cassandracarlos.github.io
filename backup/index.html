@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cassandra Carlos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Website</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to My Site</h1>
+                <p>Your intro message goes here.</p>
+            </div>
+        </section>
+        <section class="card-section">
+            <div class="container">
+                <h2>Our Features</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Fast</h3>
+                        <p>Lightning-quick performance for all users.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Responsive</h3>
+                        <p>Looks great on any device.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Customizable</h3>
+                        <p>Tailor the experience to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sticky-section">
+            <div class="container two-col-sticky">
+                <div class="left">
+                    <h2>Our Mission</h2>
+                    <p>This text stays visible while the right side scrolls.</p>
+                </div>
+                <div class="right">
+                    <p>Long-scrolling text here...</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Some information...</p>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="grid">
+                    <div class="card">Fast Performance</div>
+                    <div class="card">Modern Design</div>
+                    <div class="card">Responsive Layout</div>
+                    <div class="card">Easy Customization</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="three-col">
+                <div class="container">
+                    <div class="info-box">
+                        <h3>Quality</h3>
+                        <p>We focus on delivering...</p>
+                    </div>
+                   <div class="info-box">
+                        <h3>Support</h3>
+                        <p>We're here whenever you...</p>
+                    </div>
+                   <div class="info-box">
+                        <h3>Growth</h3>
+                        <p>Helping you scale with confidence...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="full-width-banner">
+            <h2>Special Announcement</h2>
+            <p>Announcement details here.</p>
+        </section>
+        <section class="two-col">
+            <div class="container">
+                <div class="col text">
+                    <h2>About Our Mission</h2>
+                    <p>We aim to deliver quality and innovation.</p>
+                </div>
+                <div class="col image">
+                    <img src="https://via.placeholder.com/500" alt="Example image">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Cassandra Carlos. All rights reserved.</p>
+            <nav class="footer-links">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+                <a href="/privacy">Contacticy</a>
+            </nav>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
