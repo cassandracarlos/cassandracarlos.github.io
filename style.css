@@ -22,9 +22,9 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Montserrat", system-ui, sans-serif;
     font-weight: 600;
     line-height: 1.2;
+    margin-bottom: 0.5rem;
 }
 
 a {
@@ -32,10 +32,16 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .topbar {
     position: sticky;
     top: 0;
     z-index: 100;
+    border-bottom: 1px solid var(--muted);
 }
 
 .topbar a {
@@ -43,9 +49,16 @@ a {
     align-items: center;
     justify-content: center;
     height: 56px;
-    background: var(--bar);
-    color: white;
+    background: var(--background);
+    color: var(--text);
     font-weight: 600;
+}
+
+.topbar a:hover {
+    background: var(--accent);
+    color: var(--background);
+    border: none;
+    transition: 0.05s;
 }
 
 .hero {
