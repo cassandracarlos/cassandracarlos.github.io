@@ -1,79 +1,75 @@
-:root {
-    --background: #ffffff;
-    --surface: #f2f2f2;
-    --text: #111111;
-    --muted: #555555;
-    --accent: #ff2449;
-    --bar: #111111;
-    --border: #dddddd;
-}
+*
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-body {
-    font-family: "Open Sans", system-ui, sans-serif;
-    background: var(--background);
-    color: var(--text);
-    line-height: 1.7;
-}
+:root
 
-h1, h2, h3 {
-    font-weight: 600;
-    line-height: 1.2;
-    margin-bottom: 0.5rem;
-}
+    {
+        --background: #ffffff;
+        --surface: #f2f2f2;
+        --border: #dddddd;
+        --accent: #ff2449;
+        --muted: #555555;
+        --text: #111111;
+    }
 
-a {
-    color: var(--text);
-    text-decoration: none;
-}
+body
 
-.topbar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    border-bottom: 1px solid var(--muted);
-}
+    {
+        font-family: "Open Sans", system-ui, sans-serif;
+        background: var(--background);
+        color: var(--text);
+    }
 
-.topbar a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 56px;
-    background: var(--background);
-    color: var(--text);
-    font-weight: 600;
-}
+h1, h2, h3
 
-.topbar a:hover {
-    background: var(--accent);
-    color: var(--background);
-    border: none;
-    transition: 0.05s;
-}
+    {
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
 
-.hero {
-    background-image: url('images/Station.png');
-    background-size: cover;       /* fills the container without stretching */
-    background-position: center;  /* keeps the focus centered */
-    height: 70vh;                 /* half the viewport height */
-    min-height: 250px;            /* optional minimum */
-    position: relative;
-}
+a
 
-.hero img {
-    width: 100%;
-    height: auto;
-}
+    {
+        color: var(--text);
+        text-decoration: none;
+    }
 
-.hero h1 {
-    font-size: clamp(1.8rem, 3vw, 2.4rem);
-    max-width: 28ch;
-}
+.topbar
+
+    {
+        top: 0;
+        z-index: 100;
+        position: sticky;
+        border-bottom: 1px solid var(--muted);
+    }
+
+.topbar a
+
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 56px;
+        background: var(--background);
+        color: var(--text);
+        font-weight: 600;
+    }
+
+.hero
+
+    {
+        background-image: url('images/Station.png');
+        background-position: center;
+        background-size: cover; /* fills the container without stretching */
+        position: relative;
+        height: 70vh;
+    }
 
 .bento {
     max-width: 1100px;
