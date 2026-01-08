@@ -5,114 +5,114 @@
 
 /* Root variables for easy theming */
 :root {
-  --color-bg: #ffffff;
-  --color-text: #111111;
-  --color-accent: #cb0a51;
-  --color-accent-hover: #f22186;
-  --font-heading: 'Montserrat', 'Open Sans', 'Inter', sans-serif;
-  --font-body: 'Open Sans', 'Inter', sans-serif;
+    --color-bg: #ffffff;
+    --color-text: #111111;
+    --color-accent: #cb0a51;
+    --color-accent-hover: #f22186;
+    --font-heading: 'Montserrat', 'Open Sans', 'Inter', sans-serif;
+    --font-body: 'Open Sans', 'Inter', sans-serif;
 }
 
 /* Base styles */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-body);
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  line-height: 1.6;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* Card container */
 .card {
-  text-align: center;
-  max-width: 500px;
-  padding: 2rem;
-  animation: fadeInUp 0.8s ease-out;
+    text-align: center;
+    max-width: 500px;
+    padding: 2rem;
+    animation: fadeInUp 0.8s ease-out;
 }
 
 /* Typography */
 h1 {
-  font-size: 2.25rem;
-  font-family: var(--font-heading);
-  font-weight: 600;
-  margin-bottom: 0.25rem; /* reduced from 0.5rem */
+    font-size: 2.25rem;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    margin-bottom: 0.25rem; /* reduced from 0.5rem */
 }
 
 .title {
-  font-size: 1.1rem;
-  margin-bottom: 1rem; /* reduced from 1.5rem */
-  color: var(--color-accent);
-  font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1rem; /* reduced from 1.5rem */
+    color: var(--color-accent);
+    font-weight: 500;
 }
 
 .bio {
-  font-size: 0.95rem;
-  margin-bottom: 2rem;
-  padding: 0 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
 }
 
 .bio a {
-  color: var(--color-accent);
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s ease, border-bottom 0.2s ease;
-  border-bottom: 1px solid transparent;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+    border-bottom: 1px solid transparent;
 }
 
 .bio a:hover {
-  color: var(--color-accent-hover);
-  border-bottom: 1px solid var(--color-accent-hover);
+    color: var(--color-accent-hover);
+    border-bottom: 1px solid var(--color-accent-hover);
 }
 
 /* Contact links styled as pill buttons */
 .contact-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
 }
 
 .contact-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem 1rem;
-  border: 2px solid var(--color-accent);
-  border-radius: 999px;
-  background-color: transparent;
-  color: var(--color-accent);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    border: 2px solid var(--color-accent);
+    border-radius: 999px;
+    background-color: transparent;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
 }
 
 .contact-links a:hover {
-  background-color: var(--color-accent);
-  color: #fff;
-  transform: translateY(-2px);
+    background-color: var(--color-accent);
+    color: #fff;
+    transform: translateY(-2px);
 }
 
 .contact-links a:hover i {
-  color: #fff;
+    color: #fff;
 }
 
 .contact-links i {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 /* Fade-in animation */
 .fade-in {
-  opacity: 0;
-  animation: fadeIn 1s ease forwards;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
 }
 
 .fade-in:nth-of-type(1) { animation-delay: 0.2s; }
@@ -121,44 +121,40 @@ h1 {
 .fade-in:nth-of-type(4) { animation-delay: 0.8s; }
 
 @keyframes fadeIn {
-  to { opacity: 1; }
+    to { opacity: 1; }
 }
 
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Responsive tweaks */
 @media (max-width: 600px) {
-  .card {
-    padding: 1.5rem;
-  }
+    .card {
+        padding: 1.5rem;
+    }
 
-  h1 {
-    font-size: 1.75rem;
-  }
+    h1 {
+        font-size: 1.75rem;
+    }
 
-  .title {
-    font-size: 1rem;
-  }
+    .title {
+        font-size: 1rem;
+    }
 
-  .bio {
-    font-size: 0.9rem;
-  }
+    .bio {
+        font-size: 0.9rem;
+    }
 
-  .contact-links a {
-    font-size: 0.85rem;
-    padding: 0.5rem 0.9rem;
-  }
+    .contact-links a {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.9rem;
+    }
 }
-/*
-
-file:///home/cass/Documents/Business/main_websites/cassandracarlos.github.io/index.html
-file:///home/cass/Documents/Business/main_websites/simple-geometry.github.io/index.html
