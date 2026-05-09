@@ -4,46 +4,74 @@
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>Cassandra Carlos &ndash; Contact</title>
-   <link rel="stylesheet" href="../style.css" />
+   <link rel="stylesheet" href="/style.css" />
+   <style>
+      .cta {
+         width: 1000px;
+      }
+      form {
+         max-width: 400px;
+         margin: 2rem auto;
+      }
+      form label {
+         display: block;
+         margin-bottom: 1rem;
+         font-weight: 600;
+         color: #1e1e1e;
+      }
+      form input, form textarea {
+         width: 100%;
+         padding: 0.6rem;
+         margin-top: 0.4rem;
+         border: 1px solid #5c5c51;
+         font-size: 1rem;
+         font-family: inherit;
+      }
+      form textarea {
+         min-height: 120px;
+         resize: vertical;
+      }
+      form button {
+         display: inline-block;
+         padding: 0.7rem 1.2rem;
+         background: #1e1e1e;
+         color: #fefefe;
+         border: none;
+         cursor: pointer;
+      }
+      form button:hover {
+         background: #cb0a51;
+      }
+   </style>
 </head>
 <body>
    <nav>
-      <ul class="nav-pages">
-         <li><a href="../index.html" class="anim">UX/UI Design</a></li>
-         <li><a href="illustration.html" class="anim">Illustration</a></li>
-         <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-      <div class="nav-socials">
-         <a href="https://www.instagram.com/cassjun/" target="_blank" aria-label="Link to my Instagram profile">
-            <img src="../assets/socials/ig-black.svg">
-         </a>
-         <a href="https://www.linkedin.com/in/cassandracarlos/" target="_blank" aria-label="Link to my LinkedIn profile">
-            <img src="../assets/socials/linkedin-black.png">
-         </a>
+      <div class="pages">
+         <a href="/index.html" class="inactive">UX/UI Design</a>
+         <a href="/pages/illustration.html" class="inactive">Illustration</a>
+         <a href="/pages/contact.html" class="active">Contact</a>
+      </div>
+      <div class="socials">
+         <a href="https://www.instagram.com/cassjun" target="_blank"><img src="/assets/instagram.svg"></a>
+         <a href="https://www.linkedin.com/in/cassandracarlos/" target="_blank"><img src="/assets/linkedin.svg"></a>
       </div>
    </nav>
-   <main>
-      <header class="fade-in">
+   <header>
+      <div class="cta">
          <h1>Get in Touch</h1>
-      </header>
-      <section class="fade-in">
-         <form
-         action="https://formspree.io/f/xaqvpbgj"
-         method="POST"
-         >
-         <label>
-            Your email:
-            <input type="email" name="email">
-         </label>
-         <label>
-            Your message:
-            <textarea name="message"></textarea>
-         </label>
-         <!-- your other form fields go here -->
+         <p>I'm open for work in UX/UI design. Send me an email using the form below if you'd like to collaborate or talk about design.</p>
+      </div>
+   </header>
+   <main>
+      <form action="https://formspree.io/f/xaqvpbgj" method="POST">
+         <label>Your email:<input type="email" name="email"></label>
+         <label>Your message:<textarea name="message"></textarea></label>
          <button type="submit">Send</button>
-         </form>
-      </section>
+      </form>
    </main>
+   <footer>
+      <p>© <span id="year"></span> Cassandra Carlos</p>
+   </footer>
    <script src="script.js"></script>
 </body>
 </html>

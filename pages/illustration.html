@@ -4,34 +4,43 @@
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>Cassandra Carlos &ndash; Illustration</title>
-   <link rel="stylesheet" href="../style.css" />
+   <link rel="stylesheet" href="/style.css" />
+   <style>
+      .portfolio {
+         width: 1000px;
+      }
+      .portfolio img {
+         width: 100%;
+         height: auto;
+      }
+   </style>
 </head>
 <body>
    <nav>
-      <ul class="nav-pages">
-         <li><a href="../index.html" class="anim">UX/UI Design</a></li>
-         <li><a href="illustration.html" class="active">Illustration</a></li>
-         <li><a href="contact.html" class="anim">Contact</a></li>
-      </ul>
-      <div class="nav-socials">
-         <a href="https://www.instagram.com/cassjun/" target="_blank" aria-label="Link to my Instagram profile">
-            <img src="../assets/socials/ig-black.svg">
-         </a>
-         <a href="https://www.linkedin.com/in/cassandracarlos/" target="_blank" aria-label="Link to my LinkedIn profile">
-            <img src="../assets/socials/linkedin-black.png">
-         </a>
+      <div class="pages">
+         <a href="/index.html" class="inactive">UX/UI Design</a>
+         <a href="/pages/illustration.html" class="active">Illustration</a>
+         <a href="/pages/contact.html" class="inactive">Contact</a>
+      </div>
+      <div class="socials">
+         <a href="https://www.instagram.com/cassjun" target="_blank"><img src="/assets/instagram.svg"></a>
+         <a href="https://www.linkedin.com/in/cassandracarlos/" target="_blank"><img src="/assets/linkedin.svg"></a>
       </div>
    </nav>
+   <!--<header>
+      <h1>Hi, I'm Cassandra!</h1>
+      <p>I'm a UX/UI designer with a background in fine arts, focused on making apps and websites.</p>
+   </header>-->
    <main>
-      <section class="gallery fade-in">
-         <img src="../assets/illustration/bus.png">
-         <img src="../assets/illustration/cass_portfolio_1.png">
-         <img src="../assets/illustration/demon.PNG">
-         <img src="../assets/illustration/IMG_7805.jpg">
-         <img src="../assets/illustration/catwalk.png">
-         <img src="../assets/illustration/partners.jpg">
-      </section>
+      <div class="portfolio">
+         <img src="/assets/thumbnails/nevermore.png">
+         <img src="/assets/thumbnails/roboto.png">
+         <img src="/assets/thumbnails/vergil.png">
+      </div>
    </main>
+   <footer>
+      <p>© <span id="year"></span> Cassandra Carlos</p>
+   </footer>
    <script src="script.js"></script>
 </body>
 </html>
