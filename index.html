@@ -3,143 +3,100 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Cassandra Carlos &ndash; UX/UI Design</title>
-   <!--<link rel="stylesheet" href="style.css">-->
+   <title>Cassandra Carlos</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Work+Sans&display=swap" rel="stylesheet">
    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
-
-* {
-   margin: 0;
-   box-sizing: border-box;
-}
-
-:root {
-   --font-body: "Work Sans", Arial, Helvetica, sans-serif;
-   --font-header: "Montserrat", Arial, Helvetica, sans-serif;
-   --colour-bg: #fefefe;
-   --colour-text: #30302e;
-   --colour-accent: #cb0a51;
-   --colour-caption: #a5a59c;
-   --colour-bold: #212121;
-   --image-radius: 12px;
-   --small-gap: 10px;
-   --large-gap: 20px;
-}
-
-body {
-   font-family: var(--font-body);
-   line-height: 1.8;
-   color: var(--colour-text);
-   background-color: var(--colour-bg);
-}
-
-img {
-   max-width: 24px;
-   height: auto;
-   filter: opacity(75%);
-}
-
-h1, h2, h3 {
-   font-family: var(--font-header);
-   color: var(--colour-bold);
-}
-
-main {
-   padding: 1rem 2rem;
-         max-width: 400px;
-         margin: 0 auto;
-}
-
-main a {
-text-decoration: none;
-   color: var(--colour-text);
-   display: flex;
-   align-items: center;
-}
-
-footer {
-   padding: 1rem 2rem;
-   text-align: center;
-   border-top: 1px solid var(--colour-caption);
-}
-
-@media (max-width: 768px) {
-   main {
-      padding: 1rem;
+   * {
+      margin: 0;
+      box-sizing: border-box;
    }
-}
-
-      /*.cta {
-         max-width: 1000px;
+   :root {
+      --font-body: "Work Sans", Arial, Helvetica, sans-serif;
+      --font-header: "Montserrat", Arial, Helvetica, sans-serif;
+      --colour-bg: #fefefe;
+      --colour-text: #30302e;
+      --colour-accent: #cb0a51;
+      --colour-caption: #a5a59c;
+      --colour-bold: #212121;
+      --image-radius: 12px;
+      --small-gap: 10px;
+      --large-gap: 20px;
+   }
+   body {
+      font-family: var(--font-body);
+      line-height: 1.6;
+      color: var(--colour-text);
+      background-color: var(--colour-bg);
+   }
+   h1, h2, h3 {
+      font-family: var(--font-header);
+      color: var(--colour-bold);
+   }
+   img {
+      max-width: 24px;
+      height: auto;
+      filter: opacity(75%);
+   }
+   main {
+      padding: 1rem 2rem;
+      max-width: 400px;
+      margin: 0 auto;
+   }
+   .socials {
+      margin: 1rem 0;
+   }
+   .socials img:hover {
+      filter: opacity(50%);
+   }
+   footer {
+      padding: 1rem 2rem;
+      text-align: center;
+   }
+   @media (max-width: 768px) {
+      main {
+         padding: 1rem;
       }
-      form {
-         max-width: 400px;
-         margin: 0 auto;
-      }*/
-      form label {
-         display: block;
-         margin-bottom: 1rem;
-         font-weight: 600;
-         color: #1e1e1e;
-      }
-      .socials {
-         margin: 1rem 0;
-         display: flex;
-      }
-      .socials a:hover {
-         color: #575754;
-         text-decoration: underline;
-      }
-      form input, form textarea {
-         width: 100%;
-         padding: 0.6rem;
-         margin-top: 0.4rem;
-         border: 1px solid #5c5c51;
-         font-size: 1rem;
-         font-family: inherit;
-      }
-      form textarea {
-         min-height: 120px;
-         resize: vertical;
-      }
-      form button {
-         display: inline-block;
-         padding: 0.7rem 1.2rem;
-         background: #1e1e1e;
-         color: #fefefe;
-         border: none;
-         cursor: pointer;
-      }
-      form button:hover {
-         background: #cb0a51;
-      }
+   }
+   form label {
+      display: block;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: #1e1e1e;
+   }
+   form input, form textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.4rem;
+      border: 1px solid #5c5c51;
+      font-size: 1rem;
+      font-family: inherit;
+   }
+   form textarea {
+      min-height: 120px;
+      resize: vertical;
+   }
+   form button {
+      display: inline-block;
+      padding: 0.7rem 1.2rem;
+      background: #1e1e1e;
+      color: #fefefe;
+      border: none;
+      cursor: pointer;
+   }
+   form button:hover {
+      background: #cb0a51;
+   }
    </style>
 </head>
-<body><!--
-   <nav>
-      <div class="pages">
-         <a href="/index.html" class="active">UX/UI Design</a>
-         <a href="/pages/illustration.html" class="inactive">Illustration</a>
-         <a href="/pages/contact.html" class="inactive">Contact</a>
-      </div>
-      <div class="socials">
-         <a href="https://www.instagram.com/simplegeometry/" target="_blank"><img src="assets/instagram.svg"></a>
-         <a href="https://www.linkedin.com/in/cassandracarlos/" target="_blank"><img src="assets/linkedin.svg"></a>
-      </div>
-   </nav>
-   <header>
-      <h1>Hi, I'm Cassandra!</h1>
-      <p>I'm a UX/UI designer with a background in fine arts, focused on making apps and websites.</p>
-   </header>-->
-
+<body>
    <main>
       <p><b>Cassandra Carlos </b>&mdash; Frontend dev with a background in art & design. Based in Vancouver, Canada.</p>
       <div class="socials">
-<a href="https://www.instagram.com/simplegeometry/" target="_blank"><img src="instagram.svg"></a>
-      <a href="https://www.linkedin.com/in/cassandracarlos/" target="_blank"><img src="linkedin.svg"></a>
+         <a href="https://www.instagram.com/simplegeometry/" target="_blank"><img src="instagram.svg"></a>
+         <a href="https://www.linkedin.com/in/cassandracarlos/" target="_blank"><img src="linkedin.svg"></a>
       </div>
-
       <form action="https://formspree.io/f/xaqvpbgj" method="POST">
          <label>Your email:<input type="email" name="email"></label>
          <label>Your message:<textarea name="message"></textarea></label>
