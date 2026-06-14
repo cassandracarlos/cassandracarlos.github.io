@@ -1,2 +1,5 @@
 # ignore all .log files
 *.txt
+
+# ignore all .svg files
+*.svg
