@@ -4,74 +4,21 @@
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>Cassandra Carlos</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:opsz@14..32&family=Open+Sans&display=swap" rel="stylesheet">
-   <style>
-   * {
-      margin: 0;
-      box-sizing: border-box;
-   }
-   :root {
-      --font-body: "Open Sans", Arial, Helvetica, sans-serif;
-      --font-header: "Roboto", Arial, Helvetica, sans-serif;
-      --colour-bg: #fefefe;
-      --colour-text: #30302e;
-   }
-   body {
-      font-family: var(--font-body);
-      line-height: 1.6;
-      color: var(--colour-text);
-      background-color: var(--colour-bg);
-      padding: 1rem;
-   }
-   h1, h2, h3 {
-      font-family: var(--font-header);
-      color: var(--colour-bold);
-   }
-   h2, h3 {
-      text-transform: uppercase;
-   }
-   header {
-      max-width: 70rem;
-      margin: 0 auto;
-      text-align: center;
-   }
-   main {
-      max-width: 70rem;
-      margin: 0 auto;
-   }
-   .gallery {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* exactly 2 per row */
-      justify-items: center;
-      gap: 1rem;
-   }
-   .gallery img {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-   }
-   footer {
-      padding: 1rem 2rem;
-      text-align: center;
-   }
-   </style>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <header>
-      <h2>Cassandra Carlos</h2>
-      <p>Frontend dev + designer with a background in illustration. Based in Vancouver, Canada.</p>
-
+      <h1>Cassandra Carlos</h1>
+      <p class="headline">Frontend dev + designer</p>
    </header>
    <main>
-      <div class="gallery">
-         <img src="image1.jpg" alt="">
-         <img src="image2.jpg" alt="">
-      </div>
+      <p class="section-header">Currently working on:</p>
+      <h4>Gumbot</h4>
+      <h4>Simple Geometry</h4>
+      <h4>Concrete Isles</h4>
    </main>
    <footer>
-      <p>© <span id="year"></span> Cassandra Carlos</p>
+      <p>© <span id="year"></span> Cassandra Carlos. All Rights Reserved.</p>
    </footer>
    <script>
       document.getElementById('year').textContent = new Date().getFullYear();
