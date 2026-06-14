@@ -6,102 +6,69 @@
    <title>Cassandra Carlos</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Work+Sans&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:opsz@14..32&family=Open+Sans&display=swap" rel="stylesheet">
    <style>
    * {
       margin: 0;
       box-sizing: border-box;
    }
    :root {
-      --font-body: "Work Sans", Arial, Helvetica, sans-serif;
-      --font-header: "Montserrat", Arial, Helvetica, sans-serif;
+      --font-body: "Open Sans", Arial, Helvetica, sans-serif;
+      --font-header: "Roboto", Arial, Helvetica, sans-serif;
       --colour-bg: #fefefe;
       --colour-text: #30302e;
-      --colour-accent: #cb0a51;
-      --colour-caption: #a5a59c;
-      --colour-bold: #212121;
-      --image-radius: 12px;
-      --small-gap: 10px;
-      --large-gap: 20px;
    }
    body {
       font-family: var(--font-body);
       line-height: 1.6;
       color: var(--colour-text);
       background-color: var(--colour-bg);
+      padding: 1rem;
    }
    h1, h2, h3 {
       font-family: var(--font-header);
       color: var(--colour-bold);
    }
-   img {
-      max-width: 24px;
-      height: auto;
-      filter: opacity(75%);
+   h2, h3 {
+      text-transform: uppercase;
+   }
+   header {
+      max-width: 70rem;
+      margin: 0 auto;
+      text-align: center;
    }
    main {
-      padding: 1rem 2rem;
-      max-width: 400px;
+      max-width: 70rem;
       margin: 0 auto;
    }
-   .socials {
-      margin: 1rem 0;
+   .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* exactly 2 per row */
+      justify-items: center;
+      gap: 1rem;
    }
-   .socials img:hover {
-      filter: opacity(50%);
+   .gallery img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
    }
    footer {
       padding: 1rem 2rem;
       text-align: center;
    }
-   @media (max-width: 768px) {
-      main {
-         padding: 1rem;
-      }
-   }
-   form label {
-      display: block;
-      margin-bottom: 1rem;
-      font-weight: 600;
-      color: #1e1e1e;
-   }
-   form input, form textarea {
-      width: 100%;
-      padding: 0.6rem;
-      margin-top: 0.4rem;
-      border: 1px solid #5c5c51;
-      font-size: 1rem;
-      font-family: inherit;
-   }
-   form textarea {
-      min-height: 120px;
-      resize: vertical;
-   }
-   form button {
-      display: inline-block;
-      padding: 0.7rem 1.2rem;
-      background: var(--colour-text);
-      color: var(--colour-bg);
-      border: none;
-      cursor: pointer;
-   }
-   form button:hover {
-      background: var(--colour-accent);
-   }
    </style>
 </head>
 <body>
+   <header>
+      <h2>Cassandra Carlos</h2>
+      <p>Frontend dev + designer with a background in illustration. Based in Vancouver, Canada.</p>
+
+   </header>
    <main>
-      <p><b>Cassandra Carlos </b>&mdash; Frontend dev + designer with a background in illustration. Based in Vancouver, Canada.</p>
-      <div class="socials">
-         <a href="https://www.instagram.com/simplegeometry/" target="_blank"><img src="instagram.svg"></a>
-         <a href="https://www.linkedin.com/in/cassandracarlos/" target="_blank"><img src="linkedin.svg"></a>
+      <div class="gallery">
+         <img src="image1.jpg" alt="">
+         <img src="image2.jpg" alt="">
       </div>
-      <form action="https://formspree.io/f/xaqvpbgj" method="POST">
-         <label>Your email:<input type="email" name="email"></label>
-         <label>Your message:<textarea name="message"></textarea></label>
-         <button type="submit">Send</button>
-      </form>
    </main>
    <footer>
       <p>© <span id="year"></span> Cassandra Carlos</p>
